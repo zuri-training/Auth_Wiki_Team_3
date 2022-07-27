@@ -1,1 +1,1 @@
-# Auth_Wiki_Team_3
+# A repository for the collaborative work by Team 3 on the Auth Wiki Project
