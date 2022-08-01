@@ -180,11 +180,65 @@ section{
     }
 }
 
-section{
-    .support{
-        width: 100%;
-        background: linear-gradient(101.23deg, #111D55 55.61%, #111d5500 99.24%);
-        width: 100%;
-        color: #FCFCFC;
+footer{
+    background: #111D55;
+    width: 100%;
+    color: #F4F4F4;
+    margin: 0;
+    padding: 30px 0px;
+    a{
+        color: currentColor;
     }
+    a:hover{
+        color: currentColor;
+    }
+    h3{
+        font-family: 'Manrope';
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 60px;
+        letter-spacing: 0em;
+        text-align: left;
+
+    }
+    .firstFooter{
+        margin-bottom: 20px;
+        li{
+            margin: 1.2rem 0px;
+        }
+    }
+    .secondFooter{
+        padding: 1.3rem 0px;
+        .row{
+            margin: 0%;
+            
+            img{
+                width: 15rem;
+                height: 2rem;
+                margin: 15px;
+            }
+            .footerList{
+                text-align: right;
+                li{
+                    display: inline-flex;
+                    margin: 0px 10px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 998px) {
+    footer{
+        .secondFooter{
+            text-align: center;
+            .footerList{
+                ul{
+                padding: 10px 0px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+    
 }
