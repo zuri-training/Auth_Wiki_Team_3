@@ -142,4 +142,59 @@ section .ourCustomers img {
     width: 3rem;
     height: 3rem;
   }
-}/*# sourceMappingURL=style.css.map */
+}
+footer {
+  background: #111D55;
+  width: 100%;
+  color: #F4F4F4;
+  margin: 0;
+  padding: 30px 0px;
+}
+footer a {
+  color: currentColor;
+}
+footer a:hover {
+  color: currentColor;
+}
+footer h3 {
+  font-family: "Manrope";
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 60px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+footer .firstFooter {
+  margin-bottom: 20px;
+}
+footer .firstFooter li {
+  margin: 1.2rem 0px;
+}
+footer .secondFooter {
+  padding: 1.3rem 0px;
+}
+footer .secondFooter .row {
+  margin: 0%;
+}
+footer .secondFooter .row img {
+  width: 15rem;
+  height: 2.5rem;
+  margin: 15px;
+}
+footer .secondFooter .row .footerList {
+  text-align: right;
+}
+footer .secondFooter .row .footerList li {
+  display: inline-flex;
+  margin: 0px 10px;
+}
+
+@media screen and (max-width: 998px) {
+  footer .secondFooter {
+    text-align: center;
+  }
+  footer .secondFooter .footerList ul {
+    padding: 10px 0px;
+    text-align: center;
+  }
+}/*# sourceMappingURL=comapny.css.map */
