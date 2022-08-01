@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Manrope", sans-serif;
+}
+body {
+	font-size: 16px;
+}
+
+.error {
+	background: #f8d7da;
+	color: red;
+	padding: 10px;
+	margin: 20px auto;
+	border-radius: 7px;
+}
+
+.success {
+	background: #d4edda;
+	color: green;
+	padding: 10px;
+	margin: 20px auto;
+	border-radius: 7px;
+}
+
+.container {
+	display: flex;
+	flex-wrap: wrap;
+	height: 100vh;
+}
+.signup_left,
+.login_right {
+	flex: 42%;
+	background-image: url(./login_pattern.png);
+	text-align: center;
+	background-size: 100%;
+}
+.signup_intro,
+.login_intro {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 73vh;
+}
+.signup_left h2,
+.login_right h2 {
+	font-weight: 700;
+	font-size: 2.5rem;
+	color: #f9f9f9;
+}
+.signup_left p,
+.login_right p {
+	font-weight: 500;
+	font-size: 1.5rem;
+	color: #f9f9f9;
+	padding-top: 4%;
+}
+.signup_left img,
+.login_right img {
+	padding-top: 10%;
+	width: 45%;
+}
+.signup_right,
+.login_left {
+	flex: 58%;
+	justify-content: center;
+	align-self: center;
+	padding: 0 8% 0 8%;
+}
+.signup_card,
+.login_card {
+	margin: auto;
+	border: none;
+	border-radius: 24px;
+	height: 90%;
+	box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+	padding: 4% 20%;
+}
+.signup_card h2,
+.login_card h2 {
+	font-weight: 700px;
+	font-size: 2.5rem;
+	color: #5672ff;
+	text-align: center;
+	margin-bottom: 0.5rem;
+}
+.signup_card p,
+.login_card p {
+	font-weight: 500;
+	font-style: medium;
+	font-size: 14px;
+	text-align: center;
+	color: #3b3b3b;
+	margin-bottom: 1.5rem;
+}
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+	border: 1px solid;
+	border-radius: 6px;
+	width: 100%;
+	padding: 0.75rem 0.75rem;
+	margin-top: 0.5rem;
+	margin-bottom: 0.75rem;
+}
+label {
+	font-weight: 700;
+	color: #523f38;
+}
+.agree {
+	font-weight: 400;
+	text-decoration: none;
+	font-size: 14px;
+	margin-left: 0.75rem;
+	margin-bottom: 6%;
+}
+input[type="submit"] {
+	border-radius: 6px;
+	width: 100%;
+	padding: 0.75rem 0.75rem;
+	margin-top: 0.5rem;
+	margin-bottom: 6%;
+	background-color: #5672ff;
+	color: #f9f9f9;
+	border: none;
+	font-weight: 800;
+	font-size: 16px;
+}
+.hr_container {
+	display: flex;
+}
+.hr_container hr {
+	flex: 33%;
+	height: 1px;
+}
+.hr_container p {
+	flex: 3%;
+}
+button {
+	border-radius: 6px;
+	width: 100%;
+	padding: 0.75rem 0.75rem;
+	margin-top: 0.5rem;
+	margin-bottom: 0.75rem;
+	font-weight: 800;
+	font-size: 16px;
+	border: 1px solid #c5bfbd;
+	background-color: #fcfcfc;
+}
+button img {
+	width: 1.5rem;
+	margin: 0 1rem -5px 0;
+}
+.already {
+	margin-top: 6%;
+}
+.forgot {
+	text-align: right;
+	margin-bottom: 1rem;
+}
+a {
+	text-decoration: none;
+	font-size: 14px;
+	font-weight: 400;
+}
+
