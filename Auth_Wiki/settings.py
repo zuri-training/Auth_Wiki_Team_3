@@ -146,5 +146,5 @@ SOCIALACCOUNT_PROVIDERS = {
     
 }
 
-LOGIN_REDIRECT_URL = 'library:dashboard'
-LOGOUT_REDIRECT_URL = 'auth:signin'
+LOGIN_REDIRECT_URL = 'dashboard'
+LOGOUT_REDIRECT_URL = 'signin'

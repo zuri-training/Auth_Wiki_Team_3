@@ -18,10 +18,22 @@
 		<div class="container">
 			<div class="login_left">
 				<div class="login_card">
-					<h2>Log In</h2>
+					<h2>Sign In</h2>
+
+          {% if user %}
+          {{user}}
+          {% endif %}
+
+          {% if messages %}
+          {% for message in messages %}
+          <p{% if message.tags %} class="{{message.tags}}"{% endif %}>{{message}}</p>
+          {% endfor %}
+          {% endif %}
+
 					<p>Fill in your details to login in your account</p>
 					<form action="" method="post">
-            {% csrf_token %}
+						{% csrf_token %}
+
 						<label for="email">Email Address</label><br />
 						<input
 							type="email"
