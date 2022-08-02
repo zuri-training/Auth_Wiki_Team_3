@@ -22,22 +22,23 @@ def signinView(request):
         user = OurUser.objects.get(email=email)
         ctx['user'] = user
       except:
-        messages.error(request, 'User has not signed up!')
+        messages.error(request, 'User has not signed up!')  
       
-      
-      # user = authenticate(request, email=email, password=password)
+      user = authenticate(request, email=email, password=password)
 
-      # if user is not None:
-      #   login(request, user)
-      #   return redirect('dashboard')
-      # else:
-      #   messages.error(request, 'Your email or password is incorrect')
-        # ctx['login_form'] = form
+      if user is not None:
+        login(request, user)
+        return redirect('dashboard')
+      else:
+        messages.error(request, 'Your email or password is incorrect')
   
     return render(request, 'user_auth/signin.html', ctx)
 
 
 def signupView(request):
+  user = request.user
+  if user.is_authenticated:
+    messages.error(request..........)
     ctx = {}
     if request.method == 'POST':
       username = request.POST.get('username')
@@ -48,14 +49,14 @@ def signupView(request):
 
       if password != confirm_password:
         messages.error(request, 'Your password does not match!')
-        form = UserSignupForm()
-        ctx['signup_form'] = form
+        # form = UserSignupForm()
+        # ctx['signup_form'] = form
       else:
         try:
-          user = User.objects.get(email=email)
+          user = OurUser.objects.get(email=email)
           messages.error(request, 'User already signed up!')
-          form = UserSignupForm()
-          ctx['signup_form'] = form
+          # form = UserSignupForm()
+          # ctx['signup_form'] = form
         except:
           form = UserSignupForm(request.POST)
           if form.is_valid():
@@ -63,8 +64,8 @@ def signupView(request):
             return redirect('signin')
           else:
             messages.error(request, 'An error occurred during registration!')
-            form = UserSignupForm()
-            ctx['signup_form'] = form
+            # form = UserSignupForm()
+            # ctx['signup_form'] = form
     else:
       form = UserSignupForm()
       ctx['signup_form'] = form

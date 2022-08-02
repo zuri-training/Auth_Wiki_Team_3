@@ -1,17 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Auth Wiki</title>
+		<link rel="stylesheet" href="" />
+		<link
+			href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css"
+			rel="stylesheet"
+		/>
+	</head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Auth Wiki</title>
-    <link rel="stylesheet" href="">
-    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
-</head>
+	<body>
+		<h1>Home</h1>
 
-<body>
-    <h1>Home</h1>
-</body>
-
+		{% if request.user.is_authenticated %}
+		<h3>Welcome {{request.user}}</h3>
+		<p>Visit <a href="{% url 'dashboard' %}">Dashboard</a></p>
+		<p>Or <a href="{% url 'signout' %}">Sign Out</a></p>
+		{% else %}
+		<h3>Hello {{request.user}}</h3>
+		<p>Have an account? <a href="{% url 'signin' %}">Sign In</a></p>
+		<p>Don't have an account? <a href="{% url 'signup' %}">Sign Up</a></p>
+		{% endif %}
+	</body>
 </html>
+

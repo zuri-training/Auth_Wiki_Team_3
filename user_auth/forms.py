@@ -7,6 +7,29 @@ class UserSignupForm(UserCreationForm):
   class Meta:
     model = OurUser
     fields = ('username', 'email', 'password1', 'password2', 'tos')
+  
+  def clean_email(self):
+    email = self.cleaned_data['email'].lower()
+    try:
+      user = OurUser.objects.get(email=email)
+    except Exception as e:
+      return email
+    raise forms.ValidationError(f"Email {email} is already in use.")
+  
+  def clean_username(self):
+    username = self.cleaned_data['username']
+    try:
+      user = OurUser.objects.get(username=username)
+    except Exception as e:
+      return username
+    raise forms.ValidationError(f"Username {username} is already in use.")
+  
+  def clean_tos(self):
+    tos = self.cleaned_data['tos']
+    if tos is False:
+      raise forms.ValidationError(f"Please ACCEPT our Terms of Service and Privacy Policy")
+    else:
+      return tos
 
 class UserLoginForm(forms.ModelForm):
   password = forms.CharField(label='Password', widget=forms.PasswordInput)

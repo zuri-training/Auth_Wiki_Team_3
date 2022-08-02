@@ -28,6 +28,14 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['127.0.0.1', 'localhost']
 
+AUTH_USER_MODEL = "user_auth.OurUser"
+AUTHENTICATION_BACKENDS = (
+  'django.contrib.auth.backends.AllowAllUsersModelBackend',
+  'user_auth.backends.CaseInsensitiveModelBackend',
+
+  'django.contrib.auth.backends.ModelBackend',
+  'allauth.account.auth_backends.AuthenticationBackend',
+)
 
 # Application definition
 
@@ -134,10 +142,9 @@ STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-AUTHENTICATION_BACKENDS = [
-    'django.contrib.auth.backends.ModelBackend',
-    'allauth.account.auth_backends.AuthenticationBackend',
-]
+# AUTHENTICATION_BACKENDS = [
+    
+# ]
 
 SITE_ID = 1
 
@@ -147,4 +154,4 @@ SOCIALACCOUNT_PROVIDERS = {
 }
 
 LOGIN_REDIRECT_URL = 'dashboard'
-LOGOUT_REDIRECT_URL = 'signin'
+ACCOUNT_LOGOUT_REDIRECT_URL = 'signin'

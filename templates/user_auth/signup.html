@@ -37,10 +37,8 @@
 					<p>Sign Up to get all your authentication codes</p>
 					<form action="" method="post">
 						{% csrf_token %}
-            {{signup_form}}
-            <input type="submit" value="Sign Up" />
-
-						<!-- <label for="username">Username</label><br />
+                
+						<label for="username">Username</label><br />
 						<input
 							type="text"
 							name="username"
@@ -76,8 +74,8 @@
 							<a href=""> "Terms of Service"</a> and
 							<a href="">Privacy Policy.</a></label
 						>
-						<br /> -->
-						
+						<br />
+						<input type="submit" value="Sign Up" />
 						<div class="hr_container">
 							<hr />
 
