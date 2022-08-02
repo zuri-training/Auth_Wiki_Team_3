@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company</title>
+
+    <link rel="stylesheet" href="/assets/framework/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/framework/materialize.min.css">
+    <link rel="stylesheet" href="/comapny.css">
+</head>
+<body>  
+    <section>
+        <div class="example">
+            <div></div>
+    
+            <div class="secondDiv">
+                <div class="container">
+                    <h3>Code Description</h3>
+    
+                    <p>
+                        Two-factor authentication (2FA) 
+                        can help protect your applications 
+                        from password data leaks. Authentication 
+                        with a one-time password (OTP) supplied 
+                        by SMS to your users is an efficient 
+                        method of implementing two-factor authentication. 
+                        Premium direct routes from Auth Wiki 
+                        ensure the highest possible delivery rates 
+                        and the quickest possible delivery time frames 
+                        for your 2FA SMS messages. 
+                    </p>
+                </div>
+            </div>
+    
+            <div class="thirdDiv">
+                <div class="container">
+                    <h3>Example</h3>
+    
+                    <p>
+                        Two-factor authentication (2FA) 
+                        can help protect your applications 
+                        from password data leaks. Authentication 
+                        with a one-time password (OTP) supplied 
+                        by SMS to your users is an efficient 
+                        method of implementing two-factor 
+                        authentication. Premium direct routes 
+                        from Auth Wiki ensure the highest possible 
+                        delivery rates and the quickest possible 
+                        delivery time frames for your 2FA SMS messages. 
+                    </p>
+                </div>
+            </div>
+    
+            <div class="fourthDiv">
+                <div class="container">
+                    <h2>Code</h2>
+                    <p>
+                        Use the Time-Based OTP algorithm to generate 
+                        a random six-digit one-time password (OTP).
+                    </p>
+    
+                    <div class="container">
+                        <div class="codes">
+                            def send_verification_code_sms(self, dst_number: str, message):
+                                """
+                                `send_verification_code` accepts destination number
+                                to which the message that has to be sent.
+        
+                                The message text should contain a `__code__` construct
+                                in the message text which will be
+                                replaced by the code generated before sending the SMS.
+                            
+                                :param: dst_number
+                                :param: message
+                                :return: verification code
+                                """
+                                try:
+                                    response = self.client.messages.create(
+                                        src=self.app_number, dst=dst_number, text=message
+                                    )
+                                    print(response)
+                                    return response
+                                except exceptions as e:
+                                    print(e)
+                                    return "Error encountered", 400
+        
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="fifthDiv">
+                <div class="container">
+                    <h2>Comments</h2>
+        
+                    <din class="container">
+                        <div class="something">
+                            <div class="row">
+                                <img src="/assets/images/T03N4445A1H-U03P3GVAHD3-175da2b74fb0-512.jpg" alt="user image" class="col-sm-6">
+                                <h3 class="col-sm-2">Oluwatosin</h3>
+                            </div>
+                
+                            <div class="">
+                                <p>
+                                    Stay safe everyone. Remain vigilant. 
+                                    Please enable 2FA Authentication, 
+                                    preferrably using an OTP App like 
+                                    Authy or Google Authenticator.Stay 
+                                    safe everyone. Remain vigilant. Please 
+                                    enable 2FA Authentication, preferrably 
+                                    using an OTP App like Authy or Google 
+                                    Authenticator.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="something">
+                            <div class="row">
+                                <img src="/assets/images/T03N4445A1H-U03P3GVAHD3-175da2b74fb0-512.jpg" alt="user image" class="col-sm-6">
+                                <h3 class="col-sm-2">Oluwatosin</h3>
+                            </div>
+                
+                            <div class="">
+                                <p>
+                                    Stay safe everyone. Remain vigilant. 
+                                    Please enable 2FA Authentication, 
+                                    preferrably using an OTP App like 
+                                    Authy or Google Authenticator.Stay 
+                                    safe everyone. Remain vigilant. Please 
+                                    enable 2FA Authentication, preferrably 
+                                    using an OTP App like Authy or Google 
+                                    Authenticator.
+                                </p>
+                            </div>
+                        </div>
+                    </din>
+                </div>
+    
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="firstFooter">
+                <div class="row">
+                    <div class="col-md-6 col-lg-3">
+                        <h3>Auth Wiki</h3>
+                        <ul>
+                            <li>
+                                <a href="#">About Us</a>
+                            </li>
+        
+                            <li>
+                                <a href="#">Team</a>
+                            </li>
+        
+                            <li>
+                                <a href="#">Customers and Partner</a>
+                            </li>
+                        </ul>
+                    </div>
+        
+                    <div class="col-md-6 col-lg-3">
+                        <h3>Developers</h3>
+                        <ul>
+                            <li>
+                                <a href="/documentation.html">Documentation</a>
+                            </li>
+        
+                            <li>
+                                <a href="#">Guide</a>
+                            </li>
+        
+                            <li>
+                                <a href="#">Bug Report</a>
+                            </li>
+                        </ul>
+                    </div>
+        
+                    <div class="col-md-6 col-lg-3">
+                        <h3>Resources</h3>
+                        <ul>
+                            <li>
+                                <a href="#">Blog</a>
+                            </li>
+        
+                            <li>
+                                <a href="#">Report</a>
+                            </li>
+        
+                            <li>
+                                <a href="#">Ebooks and More</a>
+                            </li>
+                        </ul>
+                    </div>
+        
+                    <div class="col-md-6 col-lg-3">
+                        <h3>Getting Started</h3>
+                        <ul>
+                            <li>
+                                <a href="#">Sign Up for free</a>
+                            </li>
+        
+                            <li>
+                                <a href="#">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="secondFooter">
+            <div class="container">
+                <div class="row">
+                    <div>
+                        <img src="/assets/images/Footer Logo.png" alt="">
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <p>2021 - 2022 Auth Wiki Inc. All Rights Reserved</p>
+                        </div>
+
+                        <div class="col-lg-6 footerList">
+                            <ul>
+                                <li>
+                                    <a href="#">Privacy Policy</a>
+                                </li>
+    
+                                <li>
+                                    <a href="#">Terms</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/assets/framework/bootstrap.min.js"></script>
+    <script src="/assets/framework/materialize.min.js"></script>
+    <script src="/assets/framework/jquery.js"></script>
+    <script src="/main.js"></script>
+</body>
+</html>

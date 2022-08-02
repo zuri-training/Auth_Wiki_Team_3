@@ -189,6 +189,22 @@ footer .secondFooter .row .footerList li {
   margin: 0px 10px;
 }
 
+@media screen and (min-width: 778px) {
+  footer .col-md-6:nth-child(even) {
+    text-align: right;
+  }
+  footer .col-md-6:nth-child(even) h3 {
+    text-align: right;
+  }
+}
+@media screen and (min-width: 992px) {
+  footer .col-md-6:nth-child(even) {
+    text-align: left;
+  }
+  footer .col-md-6:nth-child(even) h3 {
+    text-align: left;
+  }
+}
 @media screen and (max-width: 998px) {
   footer .secondFooter {
     text-align: center;
@@ -197,4 +213,59 @@ footer .secondFooter .row .footerList li {
     padding: 10px 0px;
     text-align: center;
   }
+}
+section {
+  padding: 0;
+  margin: 0;
+}
+section .example .secondDiv {
+  background: #FCFCFC;
+  padding: 20px 0px 50px 0px;
+}
+section .example .thirdDiv {
+  padding: 20px 0px 50px 0px;
+}
+section .example .fourthDiv {
+  background: #F1F1F1;
+  padding: 20px 0px 50px 0px;
+  width: 100%;
+}
+section .example .fourthDiv .container {
+  margin-top: 50px;
+}
+section .example .fourthDiv .container .codes {
+  background: #141414;
+  color: #FCFCFC;
+  padding: 7% 20%;
+}
+section .example .fifthDiv .something {
+  border-bottom: 20px;
+  border-bottom: 2px solid red;
+  padding: 0rem 5rem;
+}
+section .example .fifthDiv .something h3 {
+  margin-bottom: 0;
+}
+section .example .fifthDiv .something img {
+  border-radius: 100%;
+  width: 5rem;
+  height: 3rem;
+  display: flex;
+}
+section .example .fifthDiv .something p {
+  line-height: 3rem;
+  font-family: "Manrope";
+  font-size: 23px;
+  font-weight: 200;
+  line-height: 40px;
+  letter-spacing: 0em;
+  text-align: left;
+  padding: 0px 6rem;
+}
+section .lastBtn {
+  border: none;
+  text-align: center;
+  width: 100%;
+  height: 2.5rem;
+  margin-top: 28%;
 }/*# sourceMappingURL=comapny.css.map */

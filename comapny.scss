@@ -206,6 +206,7 @@ footer{
         li{
             margin: 1.2rem 0px;
         }
+        
     }
     .secondFooter{
         padding: 1.3rem 0px;
@@ -228,6 +229,30 @@ footer{
     }
 }
 
+@media screen and (min-width: 778px) {
+    footer{
+        .col-md-6:nth-child(even){
+            text-align: right;
+    
+            h3{
+                text-align: right;
+            }
+        }
+    }
+}
+@media screen and (min-width: 992px) {
+    footer{
+        .col-md-6:nth-child(even){
+            text-align: left;
+    
+            h3{
+                text-align: left;
+            }
+        }
+    }
+}
+
+
 @media screen and (max-width: 998px) {
     footer{
         .secondFooter{
@@ -241,4 +266,66 @@ footer{
         }
     }
     
+}
+
+section{
+    padding: 0;
+    margin: 0;
+    .example{
+        .secondDiv{
+            background: #FCFCFC;
+            padding: 20px 0px 50px 0px;
+        }
+        .thirdDiv{
+            padding: 20px 0px 50px 0px;
+        }
+        .fourthDiv{
+            background: #F1F1F1;     
+            padding: 20px 0px 50px 0px;
+            width: 100%;
+            .container{
+                margin-top: 50px;
+                .codes{
+                    background: #141414;
+                    color: #FCFCFC;
+                    padding: 7% 20%;
+                }
+            }
+        }
+        .fifthDiv{
+            .something{
+                border-bottom: 20px;
+                border-bottom: 2px solid red;
+                
+                h3{
+                    margin-bottom: 0;
+                }
+                padding: 0rem 5rem;
+                img{
+                    border-radius: 100%;
+                    width: 5rem;
+                    height: 3rem;
+                    display: flex;
+                }
+                p{
+                    line-height: 3rem;
+                    font-family: 'Manrope';
+                    font-size: 23px;
+                    font-weight: 200;
+                    line-height: 40px;
+                    letter-spacing: 0em;
+                    text-align: left;
+                    padding: 0px 6rem;
+        
+                }
+            }
+        }
+    }
+    .lastBtn{
+        border: none;
+        text-align: center;
+        width: 100%;
+        height: 2.5rem;
+        margin-top: 28%;
+    }
 }
