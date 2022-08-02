@@ -220,6 +220,11 @@ form{
     margin-left: 5rem;
 }
 
+.user__info__right >h3{
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
 .btn{
     width: 100%;
     padding: 10px 0;
@@ -299,12 +304,38 @@ cursor: pointer;
 
 
 .linked__accounts__header{
-    margin-top: 30px;
+    margin-top: 70px;
 }
 
 .linked__accounts{
     display: flex;
     justify-content: space-between;
+    margin-top: 45px;
+    align-items: center;
+}
+
+.linked__accounts__socials{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.linked__accounts__socials >img{
+    margin-right: 1rem;
+}
+
+.social__button{
+    font-family: 'Manrope';
+    font-weight: 600;
+    padding: 0 1rem;
+    height: 30px;
+    border: none;
+    background: #FCFCFC;
+    gap: 4px;
+    border: 1px solid #D0D0D0;
+border-radius: 4px;
+color: #3456FF;
+font-size: 14px;
+text-align: center;
 }
 
 @media (max-width:500px) {
