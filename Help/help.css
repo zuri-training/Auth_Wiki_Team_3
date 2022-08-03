@@ -116,6 +116,11 @@ body {
 .ph-bell {
     font-size: 3.6rem;
     cursor: pointer;
+    transition: all 0.4s;
+}
+
+.ph-bell:hover {
+    color: #111D55;
 }
 
 .profile {
@@ -123,6 +128,7 @@ body {
     align-items: center;
     gap: 3rem;
 }
+
 
 .profile-picture {
     border-radius: 100%;
