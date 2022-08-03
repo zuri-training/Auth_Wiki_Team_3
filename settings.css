@@ -88,7 +88,7 @@ hr{
     text-decoration: none;
     color: #000;
 }
- .nav__link >.container >i{
+ .nav__link >.container >img{
     color: #000;
     margin-right: 1rem;
     /* -webkit-text-stroke: 0px transparent; */
