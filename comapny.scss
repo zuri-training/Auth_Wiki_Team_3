@@ -1,3 +1,5 @@
+//for company page
+
 section{
     font: Manrope;
     padding: 0;
@@ -268,21 +270,21 @@ footer{
     
 }
 
+
+// for example page
 section{
     padding: 0;
     margin: 0;
     .example{
         .secondDiv{
-            background: #FCFCFC;
-            padding: 20px 0px 50px 0px;
+            padding: 20px 0px;
         }
         .thirdDiv{
-            padding: 20px 0px 50px 0px;
+            padding: 15px 0px 50px 0px;
         }
         .fourthDiv{
             background: #F1F1F1;     
-            padding: 20px 0px 50px 0px;
-            width: 100%;
+            padding: 15px 0px 50px 0px;
             .container{
                 margin-top: 50px;
                 .codes{
@@ -294,9 +296,12 @@ section{
         }
         .fifthDiv{
             .something{
-                border-bottom: 20px;
-                border-bottom: 2px solid red;
-                
+                margin-bottom: 40px;
+                border-top: 2px solid #242341;
+                width: 100%;
+                .row{
+                    padding-top: 3rem;
+                }
                 h3{
                     margin-bottom: 0;
                 }
@@ -308,24 +313,79 @@ section{
                     display: flex;
                 }
                 p{
-                    line-height: 3rem;
                     font-family: 'Manrope';
                     font-size: 23px;
                     font-weight: 200;
-                    line-height: 40px;
-                    letter-spacing: 0em;
-                    text-align: left;
                     padding: 0px 6rem;
-        
+                    height: 100%;
+                    width: 100%;
+                }
+            }
+
+            
+            @media screen and (max-width: 700px) {
+                p{
+                    font-family: 'Manrope';
+                    font-size: 5px;
+                    font-weight: 100;
+                    padding: 0px 6rem;
+                    height: 100%;
+                    width: 100%;
                 }
             }
         }
     }
-    .lastBtn{
+}
+
+//for documentation page
+section{
+    a{
+        color: currentColor;
+    }
+    h1 h2 h3{
+        margin: 0;
+        padding: 0;
+    }
+    
+
+    @media screen and (max-width: 500px) {
+        .col{
+            flex: none;
+        }
+    }
+    .something{
+        line-height: 2rem;
+        p{
+            height: 10rem;
+            justify-content: center;
+        }
+        .lastBtn{
         border: none;
         text-align: center;
         width: 100%;
         height: 2.5rem;
-        margin-top: 28%;
+        background-attachment: #FCFCFC;
+        }
+    }
+
+    .firstDiv{
+        padding: 10px 0px;
+        .col{
+            margin: 0;
+            padding: 0;
+        }
+    }
+
+    .secondDiv{
+        background: #F1F1F1;
+        .card{
+            padding: 15px 15px;
+            width: 15rem;
+            height: 20rem;
+            img{
+                width: 13rem;
+                border-radius: 3%;
+            }
+        }
     }
 }
