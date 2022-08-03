@@ -124,6 +124,11 @@ body {
 .ph-sliders {
     font-size: 3.6rem;
     cursor: pointer;
+    transition: all 0.4s;
+}
+
+.ph-sliders:hover {
+    color: #111D55;
 }
 
 .ph-magnifying-glass {
@@ -148,7 +153,7 @@ body {
 
 .search-input:focus {
     outline: none;
-    border: 1px solid #2B48D5;
+    border: 1px solid #111D55;
 }
 
 ::placeholder {
@@ -163,6 +168,11 @@ body {
 .ph-bell {
     font-size: 3.6rem;
     cursor: pointer;
+    transition: all 0.4s;
+}
+
+.ph-bell:hover {
+    color: #111D55;
 }
 
 .profile {
