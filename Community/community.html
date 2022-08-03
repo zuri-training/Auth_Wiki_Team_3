@@ -7,9 +7,9 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Inter:wght@400;500;700&family=Lexend+Deca&family=Manrope:wght@400;500;600;700&family=Merriweather:wght@300&family=Montserrat&family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;700;900&family=Rubik:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Sacramento&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="help.css">
+        <link rel="stylesheet" href="community.css">
         <script src="https://unpkg.com/phosphor-icons"></script>
-        <title>Support and Help</title>
+        <title>Community</title>
     </head>
     <body>
         <div class="sidebar">
@@ -42,7 +42,13 @@
         </div>
         <div class="main-body">
             <header class="header">
-                <h1 class="heading-primary">Support & Help</h1>
+                    <div class="search-box">
+                        <div class="search-input-filter">
+                            <input type="text" class="search-input" placeholder="What are you looking for?">
+                            <i class="ph-sliders"></i>
+                        </div>
+                        <span><i class="ph-magnifying-glass"></i></span>
+                        </div>
                 <div class="profile">
                     <i class="ph-bell"></i>
                     <img src="Jane Doe.jpg" class="profile-picture" alt="Profile Picture">
@@ -51,36 +57,23 @@
             </header>
             
             <main class="main">
-                <section class="question-section">
-                    <div class="question-description">
-                        <h2 class="heading-secondary">How can we help you?</h2>
-                        <p>Have questions to ask? Search through the help section.</p>
-                        <div class="search-box">
-                            <input type="text" class="search-input" placeholder="Enter your questions">
-                            <span><i class="ph-magnifying-glass"></i></span>
-                        </div>
+                <section class="welcome-section">
+                    <div class="welcome-description">
+                        <h2 class="heading-secondary">Welcome to the Auth Wiki Community</h2>
+                        <p>You can also access the most recent information about new or updated authentication codes. </p>
                     </div>
-                    <div class="question-img-box">
-                        <img src="pexels-yan-krukov-8867434.jpg" class="question-img"  alt="Lady operating a computer">
+                    <div class="welcome-img-box">
+                        <img src="pexels-kindel-media-7148409.jpg" class="welcome-img"  alt="Group of young people">
                     </div>
                 </section>
 
-                <section class="faq-support-section">
-                    <div class="faq">
-                        <img src="Question.png" class="question-mark" alt="Question Mark">
-                        <h2 class="heading-secondary">FAQs</h2>
-                        <p>FAQs short for frequently asked questions is a list of commonly asked questions and answers about a specific topic.</p>
-                        <div class="view-faqs">
-                        <a href="#" class="faq-link"><span>View FAQs</span><i class="ph-caret-right"></i></a>
-                        </div>
+                <section class="information-section">
+                    <div class="left">
+                        <img src="loud-speaker.png" class="loud-speaker" alt="Loud Speaker">
                     </div>
-                    <div class="support">
-                        <img src="Lifebuoy.png" class="lifebuoy" alt="Lifebuoy">
-                        <h2 class="heading-secondary">Support</h2>
-                        <p>The good news is that you are not alone, and you are in the right place. Contact us for more detailed support.</p>
-                        <div class="view-support">
-                        <a href="#" class="support-link"><span>View Support</span><i class="ph-caret-right"></i></a>
-                        </div>
+                    <div class="right">
+                        <span class="no-info">No new Information </span>
+                        <p>You can check back later</p>
                     </div>
                 </section>
             </main>

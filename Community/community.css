@@ -90,11 +90,9 @@ body {
 }
 
 
-
 /**************************************/
 /*~ MAIN BODY */
 /**************************************/
-
 
 /**************************************/
 /*! HEADER */
@@ -112,6 +110,60 @@ body {
     z-index: 1;
 }
 
+.search-input-filter {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.search-box {
+    position: relative;
+    flex: 1;
+}
+
+.ph-sliders {
+    font-size: 3.6rem;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+.ph-sliders:hover {
+    color: #111D55;
+}
+
+.ph-magnifying-glass {
+    position: absolute;
+    top: 50%;
+    left: 2.4rem;
+    transform: translateY(-50%);
+    color: #000;
+    font-size: 2.1rem;
+    cursor: pointer;
+}
+
+.search-input {
+    height: 4.8rem;
+    width: 80%;
+    border-radius: 8px;
+    border: 1px solid #141414;;
+    padding-left: 5.5rem;
+    position: relative;
+    font-size: 2rem;
+}
+
+.search-input:focus {
+    outline: none;
+    border: 1px solid #111D55;
+}
+
+::placeholder {
+    color: #A99F9C;
+    font-size: 2.1rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+}
 
 .ph-bell {
     font-size: 3.6rem;
@@ -129,7 +181,6 @@ body {
     gap: 3rem;
 }
 
-
 .profile-picture {
     border-radius: 100%;
     width: 6.7rem;
@@ -141,144 +192,70 @@ body {
 
 
 /**************************************/
-/*~ QUESTION SECTION */
+/*~ WELCOME SECTION */
 /**************************************/
 
-.question-section {
+.welcome-section {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 7.5rem;
+    gap: 4rem;
     background: linear-gradient(95.7deg, #111D55 37.36%, rgba(17, 29, 85, 0.5) 85.16%);
     padding: 1.2rem 6.4rem;
     color: #fcfcfc;
 }
 
-.question-description p {
+.welcome-description p {
     font-size: 2.2rem;
     line-height: 1.8;
 }
 
-.question-description h2 {
-    margin-top: 5.2rem;
+.welcome-description h2 {
+    margin-top: 6.8rem;
     line-height: 1.4;
 }
 
-.question-img-box {
+.welcome-img-box {
     position: relative;
-    width: 47.5rem;
-    height: 40.3rem;
+    width: 50rem;
+    height: 40rem;
 }
 
-.question-img {
+.welcome-img {
     position: absolute;
     width: 100%;
+    height: 87%;
     top: 50%;
     transform: translateY(-50%);
     border-radius: 8px;
 }
 
-.search-box {
-    margin-top: 5rem;
-    position: relative;
-}
-
-.ph-magnifying-glass {
-    position: absolute;
-    top: 50%;
-    left: 2.4rem;
-    transform: translateY(-50%);
-    color: #000;
-    font-size: 2.1rem;
-    cursor: pointer;
-}
-
-.search-input {
-    height: 4.8rem;
-    width: 100%;
-    border-radius: 5px;
-    border: none;
-    padding-left: 5.5rem;
-    position: relative;
-    font-size: 2rem;
-}
-
-.search-input:focus {
-    outline: none;
-    border: 1px solid #2B48D5;
-}
-
-::placeholder {
-    color: #A99F9C;
-    font-size: 1.8rem;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-
-}
-
 /**************************************/
-/*^ FAQS AND SUPPORT SECTION*/
+/*^ INFORMATION SECTION*/
 /**************************************/
 
-.faq-support-section {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    row-gap: 3.6rem;
-    column-gap: 12rem;
-    padding: 1.2rem 11.8rem;
+.information-section {
+    display: flex;
+    align-items: center;
+    gap: 10rem;
+    padding: 10rem 18rem;
 }
 
-.faq-support-section p{
+.information-section p{
     font-size: 2.2rem;
     line-height: 1.6;
-    margin-bottom: 3.2rem;
 }
 
-.question-mark,
-.lifebuoy {
-    color: #2B48D5;
-    width: 16rem;
-    margin-top: 3.9rem;
+.loud-speaker {
+    width: 24.5rem;
 }
 
-.faq h2,
-.support h2{
-    margin-top: 2rem;
+.no-info {
+    display: block;
+    font-size: 3.2rem;
+    font-weight: 600;
+    margin-bottom: 0.6rem;
 }
 
-.faq-link:link,
-.faq-link:visited,
-.support-link:link,
-.support-link:visited {
-    display: flex;
-    font-size: 2.2rem;
-    gap: 2rem;
-    align-items: center;
-    color: #2B48D5;
-    text-decoration: none;
-    font-weight: 500;
-    padding-bottom: 1.2rem;
-    transition: all 0.4s;
-}
-
-.faq-link:hover,
-.faq-link:active,
-.support-link:hover,
-.support-link:active {
-    color: #111D55;
-}
-
-.faq-link:hover .ph-caret-right,
-.faq-link:active .ph-caret-right,
-.support-link:hover .ph-caret-right,
-.support-link:active .ph-caret-right{
-    color: #111D55;
-}
-
-.ph-caret-right {
-   color: #2B48D5;
-   font-size: 1.8rem;
-}
 
 
 
