@@ -9,7 +9,7 @@
 }
 body{
     display: flex;
-    overflow: hidden;
+    /* overflow: hidden; */
     font-family: 'Manrope', sans-serif;
 }
 
@@ -21,7 +21,7 @@ body{
     flex-direction: column;
     flex: 1;
     justify-content: space-between;
-   
+   /* position: fixed; */
 }
 
 .nav__top{
@@ -129,6 +129,7 @@ hr{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    /* margin-left:100px; */
 }
 
 
@@ -336,6 +337,139 @@ border-radius: 4px;
 color: #3456FF;
 font-size: 14px;
 text-align: center;
+}
+
+
+.download__history{
+    margin-top: 60px;
+    margin-bottom: 60px;
+   
+}
+
+.download__history > h2{
+    margin-bottom: 50px;
+}
+
+.search__history{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* align-items: ; */
+}
+
+
+.search__history__select{
+    display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+    padding: 0 1rem;
+    height: 35px;
+    border: none;
+    background: #111D55;
+border-radius: 4px;
+color: #fff;
+cursor: pointer;
+}
+
+.history__input__container{
+   
+  flex: 1;
+  margin: 0  2rem;
+  background: #FCFCFC;
+  border: 1px solid #141414;
+  display: flex;
+  height: 40px;
+  border-radius: 4px;
+}
+
+.history__input__container >img{
+    width: 1.5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    cursor: pointer;
+}
+
+.search__history__input{
+ width: 100%;
+ border: none;
+ outline: none;
+}
+
+.filters{
+    height: 30px;
+    cursor: pointer;
+}
+
+.auth__codes__history{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.auth__code__lang{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 20rem;
+    margin-top: 10px;
+
+}
+
+.auth__lang{
+    background-color: #6F5F59;
+    color: #fff;
+    padding: 5px 1.5rem;
+    border-radius: 3px;
+}
+
+.auth__date{
+    background-color: #6F5F59;
+    color: #fff;
+    border-radius: 3px;
+    padding: 5px 1rem;
+}
+.auth__date >img{
+    width: 1rem;
+}
+
+.auth__code >h2{
+    margin-bottom: 30px;
+}
+
+.auth__code__btn{
+    padding: 1px 2rem;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+    background-color: #3456FF;
+    color: #fff;
+    gap: 4px;
+    border-radius: 4px;
+}
+
+.terms{
+    margin-bottom: 30px;
+}
+.terms >h2{
+    margin-bottom: 30px;
+}
+.terms >p{
+    margin-bottom: 30px;
+    text-align: justify;
+}
+.policy{
+    margin-bottom: 30px;
+}
+
+.policy >h2{
+    margin-bottom: 30px;
+}
+.policy >p{
+    margin-bottom: 30px;
+    text-align: justify;
 }
 
 @media (max-width:500px) {
