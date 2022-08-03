@@ -20,7 +20,7 @@ section{
 }
 
 .left{
- background: url('../assets/images/forgot_password/Pattern.png');
+ background: url('./assets/images/forgot_password/Pattern.png');
  background-repeat: no-repeat;
  background-size:cover;
  background-position: left;
