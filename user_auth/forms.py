@@ -14,7 +14,7 @@ class UserSignupForm(UserCreationForm):
       user = OurUser.objects.get(email=email)
     except Exception as e:
       return email
-    raise forms.ValidationError(f"Email {email} is already in use.")
+    raise forms.ValidationError(f"Email '{email}' is already in use.")
   
   def clean_username(self):
     username = self.cleaned_data['username']
@@ -22,7 +22,7 @@ class UserSignupForm(UserCreationForm):
       user = OurUser.objects.get(username=username)
     except Exception as e:
       return username
-    raise forms.ValidationError(f"Username {username} is already in use.")
+    raise forms.ValidationError(f"Username is already in use.")
   
   def clean_tos(self):
     tos = self.cleaned_data['tos']

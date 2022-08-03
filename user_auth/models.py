@@ -43,7 +43,7 @@ class OurUser(AbstractBaseUser):
   username = models.CharField(verbose_name='Username', max_length=60, unique=True)
   email = models.EmailField(verbose_name='Email Address', max_length=60, unique=True)
 
-  tos = models.BooleanField(verbose_name='Accepted Terms of Services', default=False)
+  tos = models.BooleanField(verbose_name='Terms of Services', default=False)
 
   date_joined = models.DateTimeField(verbose_name='Date Joined', auto_now_add=True)
   last_login = models.DateTimeField(verbose_name='Last Login', auto_now=True)

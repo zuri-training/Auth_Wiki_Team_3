@@ -38,38 +38,27 @@ def signinView(request):
 def signupView(request):
   user = request.user
   if user.is_authenticated:
-    messages.error(request..........)
-    ctx = {}
-    if request.method == 'POST':
-      username = request.POST.get('username')
-      email = request.POST.get('email')
-      password = request.POST.get('password')
-      confirm_password = request.POST.get('confirm-password')
-      tos = request.POST.get('tos')
+    messages.error(request, 'You have already signed in.')
+    return redirect('dashboard')
+  ctx = {}
 
-      if password != confirm_password:
-        messages.error(request, 'Your password does not match!')
-        # form = UserSignupForm()
-        # ctx['signup_form'] = form
-      else:
-        try:
-          user = OurUser.objects.get(email=email)
-          messages.error(request, 'User already signed up!')
-          # form = UserSignupForm()
-          # ctx['signup_form'] = form
-        except:
-          form = UserSignupForm(request.POST)
-          if form.is_valid():
-            form.save()
-            return redirect('signin')
-          else:
-            messages.error(request, 'An error occurred during registration!')
-            # form = UserSignupForm()
-            # ctx['signup_form'] = form
+  if request.POST:
+    form = UserSignupForm(request.POST)
+
+    if form.is_valid():
+      form.save()
+      email = form.cleaned_data.get('email').lower()
+      raw_password = form.cleaned_data.get('password1')
+      messages.success(request, 'Signed up successfully, Sign In.')
+      return redirect('signin')
     else:
-      form = UserSignupForm()
       ctx['signup_form'] = form
-    return render(request, 'user_auth/signup.html', ctx)
+
+  else:
+    form = UserSignupForm()
+    ctx['signup_form'] = form
+  
+  return render(request, 'user_auth/signup.html', ctx)
 
 def signoutView(request):
   logout(request)

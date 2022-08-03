@@ -11,19 +11,25 @@ body {
 }
 
 .error {
-	background: #f8d7da;
+	background: pink;
 	color: red;
 	padding: 10px;
 	margin: 20px auto;
 	border-radius: 7px;
+	text-align: center;
+	width: 100%;
+	font-size: 14px;
 }
 
 .success {
-	background: #d4edda;
+	background: #6ae787;
 	color: green;
 	padding: 10px;
-	margin: 20px auto;
+	margin: 5px auto;
 	border-radius: 7px;
+	text-align: center;
+	width: 100%;
+	font-size: 14px;
 }
 
 .container {
@@ -99,15 +105,22 @@ body {
 input[type="text"],
 input[type="email"],
 input[type="password"] {
-	border: 1px solid;
+	border: 1px solid #523f38;
 	border-radius: 6px;
 	width: 100%;
 	padding: 0.75rem 0.75rem;
 	margin-top: 0.5rem;
 	margin-bottom: 0.75rem;
+	outline: none;
 }
+
+.form-control:hover,
+.form-control:focus {
+	border: 2px solid #5672ff;
+}
+
 label {
-	font-weight: 700;
+	font-weight: 550;
 	color: #523f38;
 }
 .agree {
@@ -128,6 +141,7 @@ input[type="submit"] {
 	border: none;
 	font-weight: 800;
 	font-size: 16px;
+	cursor: pointer;
 }
 .hr_container {
 	display: flex;

@@ -26,6 +26,12 @@
           {% endfor %}
           {% endif %}
 
+          {% for field in signup_form %} {% for error in field.errors %}
+					<p class="error">{{error}}</p>
+					{% endfor %} {% endfor %} {% if signup_form.non_field_errors %}
+					<p class="error">{{signup_form.non_field_errors}}</p>
+					{% endif %}
+
 					<p>Fill in your details to login in your account</p>
 					<form action="" method="post">
 						{% csrf_token %}

@@ -18,7 +18,7 @@
 		{% if request.user.is_authenticated %}
 		<h3>Welcome {{request.user}}</h3>
 		<p>Visit <a href="{% url 'dashboard' %}">Dashboard</a></p>
-		<p>Or <a href="{% url 'signout' %}">Sign Out</a></p>
+		<p>Or <a href="{% url 'signout' %}">Sign Out</a> of your account</p>
 		{% else %}
 		<h3>Hello {{request.user}}</h3>
 		<p>Have an account? <a href="{% url 'signin' %}">Sign In</a></p>
