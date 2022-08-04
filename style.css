@@ -3,6 +3,10 @@
   margin: 0;
   font-family: "Manrope", sans-serif;
 }
+body {
+  width: 100%;
+  max-width: 100%;
+}
 .body {
   background-image: url("/Frame\ 208.png");
   background-size: cover;
@@ -168,6 +172,11 @@ form {
   width: 356px;
   height: 90px;
 }
+.step-div {
+  margin-bottom: 3vw;
+  margin-left: 6vw;
+  max-width: 100%;
+}
 .grey-section {
   background-color: #f4f4f4;
   padding-bottom: 3vw;
@@ -207,12 +216,12 @@ form {
   font-weight: bold;
 }
 .what {
-  width: 441px;
+  width: 100%;
+  max-width: 100%;
   height: 60px;
   font-size: 40px;
   line-height: 60px;
   margin-bottom: 4vw !important;
-  margin-left: 25vw;
 }
 .card {
   justify-content: center;
@@ -256,19 +265,20 @@ form {
   padding-top: 5vw;
 }
 .foot-div {
-  padding-top: 3vw;
+  margin: 3vw 6vw;
 }
 .footer-head {
   height: 60px;
   font-weight: bold;
-  font-size: 33px;
+  font-size: 28px;
   line-height: 60px;
   padding-top: 8px;
 }
 .foot-link {
   width: auto;
+  max-width: 100%;
   height: 34px;
-  font-size: 20px;
+  font-size: 15px;
   line-height: 34px;
   color: white !important;
   text-decoration-line: underline;
@@ -283,6 +293,8 @@ form {
 .logo-div {
   padding-top: 6vw;
   padding-bottom: 3vw;
+  margin-left: 6vw;
+  margin-right: 6vw;
 }
 .terms {
   width: 125px;
