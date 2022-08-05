@@ -205,7 +205,6 @@ body {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-
 }
 
 /**************************************/
@@ -277,6 +276,10 @@ body {
 /**************************************/
 
 @media (max-width: 76.25em) {
+.heading-primary {
+    font-size: 2.8rem;
+}
+
 .heading-secondary {
     font-size: 3.2rem;
     line-height: 1.2;
@@ -285,6 +288,14 @@ body {
 
 .sidebar {
     padding: 0 2rem;
+}
+
+.profile-picture {
+    width: 5.2rem;
+}
+
+.profile-name {
+    font-size: 2rem;
 }
 
 .main-nav-link:link, 
@@ -298,17 +309,40 @@ body {
     line-height: 1.6;
 }
 
+.faq-link:link,
+.faq-link:visited,
+.support-link:link,
+.support-link:visited {
+    font-size: 2rem;
+}
 
-@media (max-width:70em) {
+.ph-caret-right {
+   color: #2B48D5;
+   font-size: 1.6rem;
+}
+}
+
+
+@media (max-width: 70em) {
 .heading-secondary {
     font-size: 2.8rem;
     line-height: 1.2;
     margin-bottom: 1.6rem;
 }
 
+.ph-bell {
+    font-size: 2.8rem;
+}
+
 .sidebar {
     padding: 0 1.6rem;
 }
+
+.main-nav-link:link, 
+.main-nav-link:visited {
+    font-size: 1.6rem; 
+}
+
 
 .question-description p,
 .faq-support-section p {
@@ -316,7 +350,91 @@ body {
     line-height: 1.4;
 }
 
+.search-input {
+    height: 4.2rem;
+    font-size: 1.6rem;
+}
 
+::placeholder {
+    font-size: 1.4rem;
+}
+
+.faq-link:link,
+.faq-link:visited,
+.support-link:link,
+.support-link:visited {
+    font-size: 1.8rem;
+}
+
+.ph-caret-right {
+   color: #2B48D5;
+   font-size: 1.4rem;
+}
+}
+
+
+@media (max-width: 62.5em) {
+.heading-secondary {
+    font-size: 2.6rem;
+    line-height: 1.2;
+    margin-bottom: 1.6rem;
+}
+
+.ph-bell {
+    font-size: 2.6rem;
+}
+
+.sidebar {
+    padding: 0 1rem;
+}
+
+.question-description p,
+.faq-support-section p {
+    font-size: 1.7rem;
+    line-height: 1.6;
+}
+}
+
+
+@media (max-width: 59.375em) {
+.heading-secondary {
+    font-size: 2.2rem;
+    line-height: 1.2;
+    margin-bottom: 1.6rem;
+}
+
+.main-nav-link:link, 
+.main-nav-link:visited {
+    font-size: 1.2rem; 
+}
+
+.question-description p,
+.faq-support-section p {
+    font-size: 1.4rem;
+    line-height: 1.6;
+}
+
+.search-input {
+    height: 4rem;
+    font-size: 1.4rem;
+}
+
+::placeholder {
+    font-size: 1.2rem;
+}
+
+.faq-link:link,
+.faq-link:visited,
+.support-link:link,
+.support-link:visited {
+    font-size: 1.4rem;
+}
+
+.ph-caret-right {
+   color: #2B48D5;
+   font-size: 1.2rem;
+}
+}
 
 
 

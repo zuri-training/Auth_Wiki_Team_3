@@ -238,7 +238,7 @@ body {
 }
 
 .loud-speaker {
-    width: 24.5rem;
+    width: 100%;
 }
 
 .no-info {
@@ -246,6 +246,169 @@ body {
     font-size: 3.2rem;
     font-weight: 600;
     margin-bottom: 0.6rem;
+}
+
+/**************************************/
+/*~ RESPONSIVE LAYOUTS */
+/**************************************/
+
+@media (max-width: 76.25em) {
+.heading-primary {
+    font-size: 2.8rem;
+}
+
+.heading-secondary {
+    font-size: 3.2rem;
+    line-height: 1.2;
+    margin-bottom: 1.6rem;
+}
+
+.sidebar {
+    padding: 0 2rem;
+}
+
+.profile-picture {
+    width: 5.2rem;
+}
+
+.profile-name {
+    font-size: 2rem;
+}
+
+.main-nav-link:link, 
+.main-nav-link:visited {
+    font-size: 1.8rem; 
+}
+
+.welcome-description p,
+.information-section p {
+    font-size: 2rem;
+    line-height: 1.6;
+}
+
+.information-section {
+    padding: 8rem 14rem;
+}
+
+.no-info {
+    font-size: 3rem;
+}
+}
+
+
+@media (max-width: 70em) {
+.heading-secondary {
+    font-size: 2.8rem;
+    line-height: 1.2;
+    margin-bottom: 1.6rem;
+}
+
+.ph-sliders,
+.ph-bell {
+    font-size: 2.8rem;
+}
+
+.sidebar {
+    padding: 0 1.6rem;
+}
+
+.main-nav-link:link, 
+.main-nav-link:visited {
+    font-size: 1.6rem; 
+}
+
+
+.welcome-description p,
+.information-section p {
+    font-size: 1.8rem;
+    line-height: 1.4;
+}
+
+.information-section {
+    padding: 6rem 12rem;
+}
+
+.search-input {
+    height: 4.2rem;
+    font-size: 1.6rem;
+}
+
+::placeholder {
+    font-size: 1.4rem;
+}
+
+.no-info {
+    font-size: 2.6rem;
+}
+}
+
+
+@media (max-width: 62.5em) {
+.heading-secondary {
+    font-size: 2.6rem;
+    line-height: 1.2;
+    margin-bottom: 1.6rem;
+}
+
+.ph-sliders,
+.ph-bell  {
+    font-size: 2.6rem;
+}
+
+.sidebar {
+    padding: 0 1rem;
+}
+
+.welcome-description p,
+.information-section p {
+    font-size: 1.7rem;
+    line-height: 1.6;
+}
+
+.information-section {
+    padding: 4rem 10rem;
+}
+
+.no-info {
+    font-size: 2.4 rem;
+}
+}
+
+
+@media (max-width: 59.375em) {
+.heading-secondary {
+    font-size: 2.2rem;
+    line-height: 1.2;
+    margin-bottom: 1.6rem;
+}
+
+.main-nav-link:link, 
+.main-nav-link:visited {
+    font-size: 1.2rem; 
+}
+
+.welcome-description p,
+.information-section p {
+    font-size: 1.4rem;
+    line-height: 1.6;
+}
+
+.information-section {
+    padding: 2.5rem 8rem;
+}
+
+.search-input {
+    height: 4rem;
+    font-size: 1.4rem;
+}
+
+::placeholder {
+    font-size: 1.2rem;
+}
+
+.no-info {
+    font-size: 2rem;
+}
 }
 
 
