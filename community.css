@@ -44,7 +44,8 @@ body {
 
 .logo {
     margin-left: 0.2rem;
-    width: 15rem;
+    margin-top: 2rem;
+    width: 75%;
 }
 
 .top-nav {
@@ -198,9 +199,10 @@ body {
 .welcome-section {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    align-items: center;
     gap: 4rem;
     background: linear-gradient(95.7deg, #111D55 37.36%, rgba(17, 29, 85, 0.5) 85.16%);
-    padding: 1.2rem 6.4rem;
+    padding: 3.6rem 6.4rem 4.8rem;
     color: #fcfcfc;
 }
 
@@ -210,22 +212,22 @@ body {
 }
 
 .welcome-description h2 {
-    margin-top: 6.8rem;
+    /* margin-top: 6.8rem; */
     line-height: 1.4;
 }
 
-.welcome-img-box {
+/* .welcome-img-box {
     position: relative;
     width: 50rem;
     height: 40rem;
-}
+} */
 
 .welcome-img {
-    position: absolute;
+    /* position: absolute; */
     width: 100%;
-    height: 87%;
+    /* height: 87%;
     top: 50%;
-    transform: translateY(-50%);
+    transform: translateY(-50%); */
     border-radius: 8px;
 }
 
