@@ -161,21 +161,11 @@ body {
 }
 
 .question-description h2 {
-    /* margin-top: 5.2rem; */
     line-height: 1.4;
 }
 
-/* .question-img-box {
-    position: relative;
-    width: 47.5rem;
-    height: 40.3rem;
-} */
-
 .question-img {
-    /* position: absolute; */
     width: 100%;
-    /* top: 50%;
-    transform: translateY(-50%); */
     border-radius: 8px;
 }
 
@@ -219,7 +209,7 @@ body {
 }
 
 /**************************************/
-/*^ FAQS AND SUPPORT SECTION*/
+/*^ FAQS AND SUPPORT SECTION */
 /**************************************/
 
 .faq-support-section {
@@ -281,6 +271,33 @@ body {
    color: #2B48D5;
    font-size: 1.8rem;
 }
+
+/**************************************/
+/*~ RESPONSIVE LAYOUTS */
+/**************************************/
+
+/* @media (max-width: 76.25em) {
+.heading-secondary {
+    font-size: 3.2rem;
+    line-height: 1.2;
+    margin-bottom: 1.6rem;
+}
+
+.question-description p {
+    font-size: 2rem;
+    line-height: 1.6;
+}
+
+.faq-support-section p{
+    font-size: 2rem;
+    line-height: 1.6;
+}
+
+@media (max-width:70em) {
+
+}
+}
+ */
 
 
 
