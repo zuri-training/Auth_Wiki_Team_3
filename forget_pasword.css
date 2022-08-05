@@ -158,6 +158,10 @@ align-self: center;
  
 }
 
+.back__container >h3{
+    display: none;
+   }
+
 .container >p{
     color: #141414;
 }
@@ -269,6 +273,33 @@ button:hover{
     margin-top: 30px;
    }
 
+   .back__container >a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #000;
+   }
+
+   .back__container{
+    display: flex;
+    padding-top: 1rem;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+   }
+
+   
+
+   .back__container >h3{
+    display: block;
+    position: absolute;
+    left: 15vw;
+    top: 8.2vh;
+    margin-left: 0.5rem;
+    font-size: 16px;
+   }
+
 .container{
     width: 100vw;
 }
@@ -302,6 +333,8 @@ align-self: center;
     margin-top: 0vh;
     box-shadow: none;
 }
+
+
 
 .form{
     justify-content: flex-start;
