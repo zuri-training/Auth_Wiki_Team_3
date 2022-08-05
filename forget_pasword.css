@@ -274,7 +274,7 @@ button:hover{
 }
 
 .lock{
-    width: 3rem;
+    width: 5rem;
     margin: auto;
     margin-top: 1rem;
     display: flex;
@@ -307,6 +307,10 @@ align-self: center;
     justify-content: flex-start;
     padding: 0 2rem;
     margin-top: 2rem;
+}
+
+.btn{
+    margin: 2.5rem 2rem;
 }
 
 .dots{
