@@ -276,28 +276,47 @@ body {
 /*~ RESPONSIVE LAYOUTS */
 /**************************************/
 
-/* @media (max-width: 76.25em) {
+@media (max-width: 76.25em) {
 .heading-secondary {
     font-size: 3.2rem;
     line-height: 1.2;
     margin-bottom: 1.6rem;
 }
 
-.question-description p {
+.sidebar {
+    padding: 0 2rem;
+}
+
+.main-nav-link:link, 
+.main-nav-link:visited {
+    font-size: 1.8rem; 
+}
+
+.question-description p,
+.faq-support-section p {
     font-size: 2rem;
     line-height: 1.6;
 }
 
-.faq-support-section p{
-    font-size: 2rem;
-    line-height: 1.6;
-}
 
 @media (max-width:70em) {
+.heading-secondary {
+    font-size: 2.8rem;
+    line-height: 1.2;
+    margin-bottom: 1.6rem;
+}
 
+.sidebar {
+    padding: 0 1.6rem;
 }
+
+.question-description p,
+.faq-support-section p {
+    font-size: 1.8rem;
+    line-height: 1.4;
 }
- */
+
+
 
 
 
