@@ -539,7 +539,7 @@ cursor: pointer;
 
 .img{
     width: 12rem;
-    margin-right:auto;
+    margin:auto;
 }
 .img >img{
     border-radius: 100%;
@@ -552,7 +552,7 @@ cursor: pointer;
 .inner__circle{
     position:absolute;
     top: 6rem;
-    /* right: 9rem; */
+    right: 5rem;
     /* padding:1rem; */
     background-color: #fff;
     width: 3rem;
@@ -570,9 +570,33 @@ cursor: pointer;
 }
 
 .form__input >input{
-    height: 35px;
-    width:70vw;
+    height: 38px;
+    width:80vw;
     border-radius: 4px;
 }
+
+.user__info__right{
+    flex: 1;
+    width:90vw;
+    margin-left: 0.2rem;
+}
+
+.linked__accounts{
+    /* display: flex; */
+    justify-content: space-between;
+    /* margin-top: 45px; */
+    align-items: flex-start;
+}
+
+/* .linked__accounts__socials{ */
+    /* display: flex; */
+    /* justify-content: flex-start; */
+    /* align-items: flex-start; */
+/* } */
+
+.btn{
+    margin-top: 70px;
+}
+
 
 }
