@@ -16,7 +16,12 @@
   </head>
   <body>
     <div class="sidebar">
-      <img src="/Images/Logo.png" class="logo" alt="Auth Wiki Logo" />
+      <div class="logo-menu-container">
+        <div class="menu-icon close">
+            <i class="ph-x"></i>
+        </div>
+        <img src="/Images/Logo.png" class="logo" alt="Auth Wiki Logo" />
+      </div>
       <nav class="main-nav">
         <div class="top-nav">
           <ul class="main-nav-list">
@@ -63,6 +68,9 @@
     </div>
     <div class="main-body">
       <header class="header">
+        <div class="menu-icon open">
+          <i class="ph-list"></i>
+        </div>
         <img src="/Images/Header Logo.png" class="mobile-logo" alt="Auth Wiki Logo">
         <h1 class="heading-primary support-and-help">Support & Help</h1>
         <div class="profile">
@@ -81,7 +89,7 @@
           <div class="question-description">
             <h2 class="heading-secondary">How can we help you?</h2>
             <p>Have questions to ask? Search through the help section.</p>
-            <div class="search-box">
+            <div class="search-box non-mobile">
               <input
                 type="text"
                 class="search-input"
@@ -115,11 +123,6 @@
               FAQs short for frequently asked questions is a list of commonly
               asked questions and answers about a specific topic.
             </p>
-            <div class="view-faqs">
-              <a href="#" class="faq-link"
-                ><span>View FAQs</span><i class="ph-caret-right"></i
-              ></a>
-            </div>
           </div>
           <div class="support">
             <img src="/Images/Lifebuoy.png" class="lifebuoy" alt="Lifebuoy" />
@@ -128,11 +131,16 @@
               The good news is that you are not alone, and you are in the right
               place. Contact us for more detailed support.
             </p>
-            <div class="view-support">
-              <a href="#" class="support-link"
-                ><span>View Support</span><i class="ph-caret-right"></i
+          </div>
+          <div class="view-faqs">
+              <a href="#" class="faq-link"
+                ><span>View FAQs</span><i class="ph-caret-right"></i
               ></a>
             </div>
+          <div class="view-support">
+            <a href="#" class="support-link"
+              ><span>View Support</span><i class="ph-caret-right"></i
+            ></a>
           </div>
         </section>
       </main>

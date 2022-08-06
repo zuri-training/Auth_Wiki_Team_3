@@ -13,7 +13,12 @@
     </head>
     <body>
         <div class="sidebar">
-                <img src="/Images/Logo.png" class="logo" alt="Auth Wiki logo">
+            <div class="logo-menu-container">
+                <div class="menu-icon close">
+                    <i class="ph-x"></i>
+                </div>
+                <img src="/Images/Logo.png" class="logo" alt="Auth Wiki Logo" />
+            </div>
             <nav class="main-nav">
                 <div class="top-nav">
                     <ul class="main-nav-list">
@@ -42,13 +47,17 @@
         </div>
         <div class="main-body">
             <header class="header">
-                    <div class="search-box">
-                        <div class="search-input-filter">
-                            <input type="text" class="search-input" placeholder="What are you looking for?">
-                            <i class="ph-sliders"></i>
-                        </div>
-                        <span><i class="ph-magnifying-glass"></i></span>
-                        </div>
+                <div class="menu-icon open">
+                <i class="ph-list"></i>
+                </div>
+                <img src="/Images/Header Logo.png" class="mobile-logo" alt="Auth Wiki Logo">
+                <div class="search-box non-mobile">
+                    <div class="search-input-filter">
+                        <input type="text" class="search-input" placeholder="What are you looking for?">
+                        <i class="ph-sliders"></i>
+                    </div>
+                    <span><i class="ph-magnifying-glass"></i></span>
+                </div>
                 <div class="profile">
                     <i class="ph-bell"></i>
                     <img src="/Images/Jane Doe.jpg" class="profile-picture" alt="Profile Picture">
@@ -68,6 +77,13 @@
                 </section>
 
                 <section class="information-section">
+                    <div class="search-box mobile">
+                        <div class="search-input-filter">
+                            <input type="text" class="search-input" placeholder="What are you looking for?">
+                            <i class="ph-sliders"></i>
+                        </div>
+                        <span><i class="ph-magnifying-glass"></i></span>
+                    </div>                    
                     <div class="left">
                         <img src="/Images/loud-speaker.png" class="loud-speaker" alt="Loud Speaker">
                     </div>
