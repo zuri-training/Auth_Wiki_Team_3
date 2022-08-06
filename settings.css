@@ -124,6 +124,10 @@ hr{
     margin-bottom: 40px;
 }
 
+.nav__mobile{
+    display :none;
+}
+
 .content{
     flex: 3;
     display: flex;
@@ -628,5 +632,26 @@ cursor: pointer;
     border-radius: 6px;
     font-size: 20px;
 }
+
+.nav__mobile{
+    display :block;
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    width:90vw;
+}
+.nav__mobile__logo{
+    width: 9rem;
+    /* align-self: center; */
+    /* margin: 5px 10px; */
+}
+
+.nav__mobile__icon{
+    width:25px;
+    height:25px;
+    cursor: pointer;
+   
+}
+
 
 }
