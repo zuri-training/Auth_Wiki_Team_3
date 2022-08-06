@@ -431,8 +431,69 @@ section{
     padding: 0;
     margin: 0;
     .example{
+        .firstDiv{
+            padding: 20px 0px;
+            h5{
+                font-family: Manrope;
+                font-size: 38px;
+                font-weight: 700;
+                line-height: 52px;
+                // margin-top: 10px;
+                // margin-bottom: 30px;
+                // font-size: 20px;
+                // font-weight: 700;
+                // line-height: 40px;
+            }
+            p{
+                font-size: 24px;
+                font-weight: 400;
+                line-height: 38px;
+                color: #141414;
+            }
+            img{
+                height: 26rem;
+                margin-top: 45px 0px;
+            }
+            button{
+                background-color: #3456FF;
+                width: 100%;
+                font-size: 15px;
+                font-weight: 500;
+                height: 3rem;
+                margin: 30px 0px;
+            }
+            .searchBox{
+                margin: 3rem 0px;
+                width: 100%;
+                text-align: center;
+               .inputArea{
+                    border: 1px solid black;
+                    border-radius: 5px;
+                    padding: 0px 10px;
+                   img{
+                       width: 2rem;
+                       height: 1.5rem;
+                       padding: 0px 5px;
+                       margin-top: 10px;
+                       font-size: 100px;
+                   }
+                   input{
+                    width: 100%;
+                    padding: 0px 20px;
+                    margin: 0;
+                    padding: 0;
+                    border: none;
+                   }
+                   input:focus{
+                    border: none;
+                   }
+               }
+            }
+        }
+        
         .secondDiv{
             padding: 20px 0px;
+            background: #F1F1F1;     
         }
         .thirdDiv{
             padding: 15px 0px 50px 0px;
@@ -530,11 +591,6 @@ section.documentation{
             font-size: 38px;
             font-weight: 700;
             line-height: 52px;
-            // margin-top: 10px;
-            // margin-bottom: 30px;
-            // font-size: 20px;
-            // font-weight: 700;
-            // line-height: 40px;
         }
         p{
             font-size: 24px;
@@ -554,25 +610,72 @@ section.documentation{
             height: 3rem;
             margin: 30px 0px;
         }
-        .col-12.d-flex.searchBox{
+        .searchBox{
+            margin: 3rem 0px;
+            width: 100%;
             text-align: center;
-            img{
-                width: 2rem;
-                height: 2rem;
-            }
+           .inputArea{
+                border: 1px solid black;
+                border-radius: 5px;
+                padding: 0px 10px;
+               img{
+                   width: 2rem;
+                   height: 1.5rem;
+                   padding: 0px 5px;
+                   margin-top: 10px;
+                   font-size: 100px;
+               }
+               input{
+                width: 100%;
+                padding: 0px 20px;
+                margin: 0;
+                padding: 0;
+                border: none;
+               }
+               input:focus{
+                border: none;
+               }
+           }
         }
     }
 
     .secondDiv{
         background: #F1F1F1;
+        padding: 1rem 0rem;
+        h2{
+            font-size: 40px;
+            font-weight: 500;
+            padding: 1rem 0rem;
+            line-height: 53px;
+        }
         .card{
-            padding: 15px 15px;
-            width: 15rem;
-            height: 20rem;
-            img{
-                width: 13rem;
-                border-radius: 3%;
+            padding: 1rem 1rem;
+            justify-content: center;
+
+            .card-image{
+                img{
+                    // width: 2rem;
+                    height: 15rem;
+                }
+            }
+            .card-content{
+                .d-flex{
+                    img{
+                        width: 2rem;
+                        height: 2rem;
+                        margin-right: 3px;
+                    }
+                    input{
+                        margin: 0;
+                        padding: 0;
+                        border: none;
+                        width: 2rem;
+                        height: 1.7rem;
+                        font-size: 1.7rem;
+                    }
+                }
             }
         }
-    }
+    }  
+
 }

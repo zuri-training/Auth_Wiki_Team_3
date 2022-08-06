@@ -287,8 +287,63 @@ section {
   padding: 0;
   margin: 0;
 }
+section .example .firstDiv {
+  padding: 20px 0px;
+}
+section .example .firstDiv h5 {
+  font-family: Manrope;
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 52px;
+}
+section .example .firstDiv p {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 38px;
+  color: #141414;
+}
+section .example .firstDiv img {
+  height: 26rem;
+  margin-top: 45px 0px;
+}
+section .example .firstDiv button {
+  background-color: #3456FF;
+  width: 100%;
+  font-size: 15px;
+  font-weight: 500;
+  height: 3rem;
+  margin: 30px 0px;
+}
+section .example .firstDiv .searchBox {
+  margin: 3rem 0px;
+  width: 100%;
+  text-align: center;
+}
+section .example .firstDiv .searchBox .inputArea {
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 0px 10px;
+}
+section .example .firstDiv .searchBox .inputArea img {
+  width: 2rem;
+  height: 1.5rem;
+  padding: 0px 5px;
+  margin-top: 10px;
+  font-size: 100px;
+}
+section .example .firstDiv .searchBox .inputArea input {
+  width: 100%;
+  padding: 0px 20px;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+section .example .firstDiv .searchBox .inputArea input:focus {
+  border: none;
+}
 section .example .secondDiv {
   padding: 20px 0px;
+  background: #F1F1F1;
 }
 section .example .thirdDiv {
   padding: 15px 0px 50px 0px;
@@ -395,22 +450,60 @@ section.documentation .firstDiv button {
   height: 3rem;
   margin: 30px 0px;
 }
-section.documentation .firstDiv .col-12.d-flex.searchBox {
+section.documentation .firstDiv .searchBox {
+  margin: 3rem 0px;
+  width: 100%;
   text-align: center;
 }
-section.documentation .firstDiv .col-12.d-flex.searchBox img {
+section.documentation .firstDiv .searchBox .inputArea {
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 0px 10px;
+}
+section.documentation .firstDiv .searchBox .inputArea img {
   width: 2rem;
-  height: 2rem;
+  height: 1.5rem;
+  padding: 0px 5px;
+  margin-top: 10px;
+  font-size: 100px;
+}
+section.documentation .firstDiv .searchBox .inputArea input {
+  width: 100%;
+  padding: 0px 20px;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+section.documentation .firstDiv .searchBox .inputArea input:focus {
+  border: none;
 }
 section.documentation .secondDiv {
   background: #F1F1F1;
+  padding: 1rem 0rem;
+}
+section.documentation .secondDiv h2 {
+  font-size: 40px;
+  font-weight: 500;
+  padding: 1rem 0rem;
+  line-height: 53px;
 }
 section.documentation .secondDiv .card {
-  padding: 15px 15px;
-  width: 15rem;
-  height: 20rem;
+  padding: 1rem 1rem;
+  justify-content: center;
 }
-section.documentation .secondDiv .card img {
-  width: 13rem;
-  border-radius: 3%;
+section.documentation .secondDiv .card .card-image img {
+  height: 15rem;
+}
+section.documentation .secondDiv .card .card-content .d-flex img {
+  width: 2rem;
+  height: 2rem;
+  margin-right: 3px;
+}
+section.documentation .secondDiv .card .card-content .d-flex input {
+  margin: 0;
+  padding: 0;
+  border: none;
+  width: 2rem;
+  height: 1.7rem;
+  font-size: 1.7rem;
 }/*# sourceMappingURL=company.css.map */
