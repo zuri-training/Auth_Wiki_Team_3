@@ -560,4 +560,13 @@ cursor: pointer;
     border-radius: 50%;
 }
 
+.user__info__left>h3{
+    margin-bottom: 9px;
+}
+.user__info__left>p{
+    font-size: 15px;
+    /* padding-right: 3rem; */
+    margin: auto;
+}
+
 }
