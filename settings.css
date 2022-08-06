@@ -299,6 +299,7 @@ cursor: pointer;
 .img >img{
     border-radius: 50%;
     width: 100%;
+    height: 100%;
     background-repeat: no-repeat;
     background-size:cover;
 }
@@ -472,10 +473,79 @@ cursor: pointer;
     text-align: justify;
 }
 
+.profile_photo_mobile{
+    display:none;
+}
+
+.search_history_mobile{
+    display:none;
+}
+
 @media (max-width:500px) {
    
     .nav__top >img{
         width: 9rem;
         align-self: center;
     }
+}
+
+
+@media screen and (max-width : 500px) {
+ .nav{
+    display:none;
+ }
+
+.user__info{
+    flex-direction:column;
+}
+
+.profile_photo_mobile{
+    display:block;
+}
+
+.profile_photo_desktop{
+    display:none;
+}
+
+.search__history{
+    display:none;
+    /* flex-direction:column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap:15px; */
+}
+
+.search_history_mobile{
+    display:block;
+    flex-direction:row;
+}
+.input_mobile{
+    display:flex;
+}
+
+.auth__codes__history{
+    flex-direction:column;
+}
+
+.content__one{
+    display:none;
+}
+
+.img__container{
+    align-items: flex-start;
+
+}
+
+.img{
+    width: 12rem;
+ 
+}
+.img >img{
+    border-radius: 100%;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
 }
