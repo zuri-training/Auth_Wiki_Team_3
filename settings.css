@@ -610,4 +610,23 @@ cursor: pointer;
  
 }
 
+.auth__code__lang{
+    display: flex;
+    justify-content: flex-start;
+    gap: 1.5rem;
+    margin-bottom:20px;
+    /* align-items: center;
+    width: 20rem;
+    margin-top: 10px; */
+
+}
+
+.auth__code__btn{
+    padding: 5px 2rem;
+    height: 40px;
+    width:90vw;
+    border-radius: 6px;
+    font-size: 20px;
+}
+
 }
