@@ -533,12 +533,13 @@ cursor: pointer;
 
 .img__container{
     align-items: flex-start;
-
+    margin-bottom: 60px;
+    margin-top: 20px;
 }
 
 .img{
     width: 12rem;
- 
+    margin-right:auto;
 }
 .img >img{
     border-radius: 100%;
@@ -546,6 +547,17 @@ cursor: pointer;
     height: 100%;
     background-repeat: no-repeat;
     background-size:cover;
+}
+
+.inner__circle{
+    position:absolute;
+    top: 6rem;
+    /* right: 9rem; */
+    /* padding:1rem; */
+    background-color: #fff;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
 }
 
 }
