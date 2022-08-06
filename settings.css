@@ -569,4 +569,10 @@ cursor: pointer;
     margin: auto;
 }
 
+.form__input >input{
+    height: 35px;
+    width:70vw;
+    border-radius: 4px;
+}
+
 }
