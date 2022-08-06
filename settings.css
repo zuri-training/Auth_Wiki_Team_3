@@ -517,10 +517,15 @@ cursor: pointer;
 
 .search_history_mobile{
     display:block;
-    flex-direction:row;
+    flex-direction:column;
+    gap:10px;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
 .input_mobile{
     display:flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .auth__codes__history{
@@ -598,5 +603,11 @@ cursor: pointer;
     margin-top: 70px;
 }
 
+.history__input__container{
+   
+  flex: 1;
+  margin: 0.8rem  0.1rem;
+ 
+}
 
 }
