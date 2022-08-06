@@ -1,0 +1,416 @@
+footer {
+  background: #111D55;
+  width: 100%;
+  color: #F4F4F4;
+  margin: 0;
+  padding: 30px 0px;
+}
+footer a {
+  color: currentColor;
+}
+footer a:hover {
+  color: currentColor;
+}
+footer h3 {
+  font-family: "Manrope";
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 60px;
+  letter-spacing: 0em;
+  text-align: eft;
+}
+footer .firstFooter {
+  margin-bottom: 20px;
+}
+footer .firstFooter li {
+  margin: 1.2rem 0px;
+}
+footer .secondFooter {
+  padding: 1.3rem 0px;
+}
+footer .secondFooter .row {
+  margin: 0%;
+}
+footer .secondFooter .row img {
+  width: 15rem;
+  height: 2.5rem;
+  margin: 15px;
+}
+footer .secondFooter .row .footerList {
+  text-align: right;
+}
+footer .secondFooter .row .footerList li {
+  display: inline-flex;
+  margin: 0px 10px;
+}
+footer div.col-lg-6 {
+  width: 50%;
+}
+
+@media screen and (max-width: 600px) {
+  footer .firstFooter h3 {
+    font-family: "Manrope";
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  footer .firstFooter li {
+    font-family: Manrope;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  footer .secondFooter .container {
+    padding: 0;
+    margin: 0;
+  }
+  footer .secondFooter .container img {
+    width: 40%;
+    height: 60%;
+  }
+  footer .secondFooter .container p {
+    height: 48px;
+    width: 125px;
+    font-family: "Manrope";
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+  footer .secondFooter .container .footerList ul {
+    margin-top: 25px;
+  }
+  footer .secondFooter .container .footerList ul li {
+    font-family: Manrope;
+    font-size: 10px;
+    font-weight: 800;
+  }
+}
+section {
+  font: Manrope;
+  padding: 0;
+  margin: 0;
+}
+section .aboutUs {
+  width: 100%;
+  background: linear-gradient(101.23deg, #111D55 55.61%, rgba(17, 29, 85, 0) 99.24%);
+  width: 100%;
+  color: #FCFCFC;
+}
+section .aboutUs h1 {
+  font-size: 56px;
+  font-weight: 700;
+}
+section .aboutUs p {
+  font-family: Manrope;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin: 60px 0px;
+}
+section .aboutUs .col-lg-7.image {
+  text-align: end;
+}
+section .aboutUs img {
+  width: 70%;
+  height: 35rem;
+  border-radius: 1.5%;
+  margin: 70px 0px;
+  text-align: right;
+}
+section .ourTeam .firstDiv {
+  text-align: center;
+  padding: 5rem 0px;
+  padding-bottom: 0;
+}
+section .ourTeam .firstDiv .imageAndDescription img {
+  width: 8rem;
+  height: 8rem;
+  margin-bottom: 5px;
+}
+section .ourTeam .firstDiv .imageAndDescription p {
+  color: #3B3B3B;
+  text-align: center;
+}
+section .ourTeam .secondDiv {
+  background: none;
+}
+section .ourTeam .secondDiv h1 {
+  color: #2B48D5;
+  font-family: "Manrope";
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 60px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+section .ourTeam .secondDiv p {
+  color: #3B3B3B;
+  font-family: "Manrope";
+  font-size: 26px;
+  line-height: 30px;
+}
+@media screen and (max-width: 700px) {
+  section .ourTeam .secondDiv h1 {
+    font-family: "Manrope";
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 42px;
+  }
+  section .ourTeam .secondDiv P {
+    font-family: "Manrope";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+  }
+}
+section .ourTeam .images {
+  width: 100%;
+}
+section .ourTeam .images .teamMembers {
+  color: #141414;
+  text-align: center;
+  margin: 30px 0px;
+}
+section .ourTeam .images .teamMembers img {
+  width: 10rem;
+  height: 10rem;
+  border: 10px solid #D6DDFF;
+  border-radius: 100%;
+  margin-bottom: 5px;
+}
+section .ourTeam .images .teamMembers p {
+  color: #141414;
+  padding: 0;
+  margin: 0;
+}
+@media screen and (max-width: 700px) {
+  section .ourTeam .images .row > * {
+    width: 50%;
+  }
+  section .ourTeam .images .teamMembers {
+    color: #141414;
+    text-align: center;
+    margin: 30px 0px;
+  }
+  section .ourTeam .images .teamMembers img {
+    width: 7rem;
+    height: 7rem;
+    border: 10px solid #D6DDFF;
+    border-radius: 100%;
+    margin-bottom: 5px;
+  }
+  section .ourTeam .images .teamMembers p {
+    color: #141414;
+    padding: 0;
+    margin: 0;
+  }
+}
+section .ourCustomers {
+  text-align: center;
+  background: #F4F4F4;
+  padding: 10px 0px;
+  font-family: "Manrope";
+}
+section .ourCustomers h2 {
+  color: #2B48D5;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 84px;
+  padding: 1px 0px;
+  text-align: left;
+}
+section .ourCustomers p {
+  color: #3B3B3B;
+  font-size: 26px;
+  line-height: 30px;
+  text-align: left;
+}
+section .ourCustomers img {
+  margin: 50px 10px;
+  width: 6rem;
+  height: 6rem;
+}
+
+@media screen and (max-width: 997px) {
+  section .aboutUs p {
+    margin: 20px 0px;
+  }
+  section .aboutUs .col-lg-7.image {
+    text-align: center;
+  }
+  section .aboutUs img {
+    width: 100%;
+    height: 33rem;
+    margin: 5px 0px;
+    margin-bottom: 40px;
+  }
+}
+@media screen and (max-width: 600px) {
+  section .ourTeam .secondDiv h1 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 50px;
+  }
+  section .ourTeam .secondDiv p {
+    font-size: 23px;
+  }
+  section .ourTeam .images img {
+    width: 3rem;
+    height: 3rem;
+    border: 10px solid #D6DDFF;
+    border-radius: 100%;
+    margin-bottom: 5px;
+  }
+  section .ourCustomers h2 {
+    font-family: "Manrope";
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 42px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  section .ourCustomers p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+}
+section {
+  padding: 0;
+  margin: 0;
+}
+section .example .secondDiv {
+  padding: 20px 0px;
+}
+section .example .thirdDiv {
+  padding: 15px 0px 50px 0px;
+}
+section .example .fourthDiv {
+  background: #F1F1F1;
+  padding: 15px 0px 50px 0px;
+}
+section .example .fourthDiv .container {
+  margin-top: 50px;
+}
+section .example .fourthDiv .container .codes {
+  background: #141414;
+  color: #FCFCFC;
+  padding: 7% 20%;
+}
+section .example .fifthDiv .something {
+  margin-bottom: 40px;
+  border-top: 2px solid #242341;
+  width: 100%;
+  padding: 0rem 5rem;
+}
+section .example .fifthDiv .something .row {
+  padding-top: 3rem;
+}
+section .example .fifthDiv .something h3 {
+  margin-bottom: 0;
+}
+section .example .fifthDiv .something img {
+  border-radius: 100%;
+  width: 5rem;
+  height: 3rem;
+  display: flex;
+}
+section .example .fifthDiv .something p {
+  font-family: "Manrope";
+  font-size: 23px;
+  font-weight: 200;
+  padding: 0px 6rem;
+  height: 100%;
+  width: 100%;
+}
+@media screen and (max-width: 700px) {
+  section .example .fifthDiv p {
+    font-family: "Manrope";
+    font-size: 5px;
+    font-weight: 100;
+    padding: 0px 6rem;
+    height: 100%;
+    width: 100%;
+  }
+}
+
+section.documentation a {
+  color: currentColor;
+}
+section.documentation h1 h2 h3 {
+  margin: 0;
+  padding: 0;
+}
+@media screen and (max-width: 500px) {
+  section.documentation .col {
+    flex: none;
+  }
+}
+section.documentation .something {
+  line-height: 2rem;
+}
+section.documentation .something p {
+  height: 10rem;
+  justify-content: center;
+}
+section.documentation .something .lastBtn {
+  border: none;
+  text-align: center;
+  width: 100%;
+  height: 2.5rem;
+  background-attachment: #FCFCFC;
+}
+section.documentation .firstDiv {
+  padding: 20px 0px;
+}
+section.documentation .firstDiv h5 {
+  font-family: Manrope;
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 52px;
+}
+section.documentation .firstDiv p {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 38px;
+  color: #141414;
+}
+section.documentation .firstDiv img {
+  height: 26rem;
+  margin-top: 45px 0px;
+}
+section.documentation .firstDiv button {
+  background-color: #3456FF;
+  width: 100%;
+  font-size: 15px;
+  font-weight: 500;
+  height: 3rem;
+  margin: 30px 0px;
+}
+section.documentation .firstDiv .col-12.d-flex.searchBox {
+  text-align: center;
+}
+section.documentation .firstDiv .col-12.d-flex.searchBox img {
+  width: 2rem;
+  height: 2rem;
+}
+section.documentation .secondDiv {
+  background: #F1F1F1;
+}
+section.documentation .secondDiv .card {
+  padding: 15px 15px;
+  width: 15rem;
+  height: 20rem;
+}
+section.documentation .secondDiv .card img {
+  width: 13rem;
+  border-radius: 3%;
+}/*# sourceMappingURL=company.css.map */

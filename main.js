@@ -1,3 +1,4 @@
-const Remaining = (total, downloaded) => (total - downloaded)
-
-console.log(Remaining(10, 20))
+// to dropdown header button
+function togglerBtn(x) {
+    x.classList.toggle("change");
+  }
