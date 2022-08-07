@@ -16,6 +16,14 @@ body {
 }
 
 /**************************************/
+/*~ HIDE CLASS */
+/**************************************/
+
+.hidden {
+    display: none;
+}
+
+/**************************************/
 /*& HEADINGS */
 /**************************************/
 
@@ -37,8 +45,7 @@ body {
     position: relative;
     background-color: #111D55;
     color: #fcfcfc;
-    height: 100%;
-    padding: 2.4rem 2.4rem;
+    padding: 0 2.4rem;
     border-right: 1px solid #fcfcfc;
 }
 
@@ -46,6 +53,12 @@ body {
     margin-left: 0.2rem;
     margin-top: 2rem;
     width: 75%;
+}
+
+.main-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
 }
 
 .top-nav {
@@ -58,6 +71,7 @@ body {
     left: 2.4rem;
     right: 2.4rem;
 }
+
 
 .main-nav-list {
     display: flex;
@@ -118,6 +132,7 @@ body {
 
 .mobile-logo {
     display: none;
+    width: 50%;
 }
 
 .search-input-filter {
@@ -424,9 +439,6 @@ body {
     }
 }
 
-/**************************************/
-/*! MOBILE LAYOUT */
-/**************************************/
 @media (max-width: 48em) {
     body {
         display: block;
@@ -439,7 +451,7 @@ body {
     }
 
     .sidebar {
-        display: block;
+        display: none;
         height: 100vh;
         padding: 3rem;   
     }
@@ -474,6 +486,7 @@ body {
     .menu-icon {
         display: block;
         cursor: pointer;
+        margin-top: 0;
     }
 
     .menu-header {
@@ -499,11 +512,6 @@ body {
         font-size: 3.4rem;
     }
 
-
-    /* .main-body {
-        display: none;
-    } */
-
     .welcome-section {
         grid-template-columns: 1fr;
     }
@@ -528,7 +536,6 @@ body {
         width: 100%;
     }
 
-
     ::placeholder {
         font-size: 1.4rem;
     }
@@ -549,46 +556,31 @@ body {
         width: 50%;
     }
 
-    /** TEST */
-
-
+@media (max-width: 30em) {
     .main-nav-link:link, 
     .main-nav-link:visited{
-        font-size: 2rem;
-
+        font-size: 2.2rem;
     }
 
-    .main-body {
-        display: none;
+    .header {
+        padding-left: 2.4rem;
+        padding-right: 2.4rem;        
     }
 
-    .main-nav-list {
-        gap: 4rem;
-        justify-content: space-between;
-    }
-
-    .bottom-nav {
-        margin-top: 4rem;
-        position: static;
-        justify-content: space-between;
-    }
-
-    .logo {
-        /* margin-left: 0.2rem; */
-        /* margin-top: 2rem; */
-        margin: 0;
-        width: 40%;
-        flex-shrink: 0;
-    }
-    .logo-menu-container {
-        display: flex;
-        align-items: center;
-        gap: 12rem;
-        /* justify-content: center; */
-        /* margin-top: 2rem; */
+    .welcome-section {
+        padding-left: 2.4rem;
+        padding-right: 2.4rem;
     }
 }
 
+@media (max-width: 21.25em) {
+    ::placeholder {
+        font-size: 1.2rem;
+    }    
+}
+}
+
+    
 
 
 

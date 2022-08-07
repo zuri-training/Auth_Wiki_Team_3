@@ -37,17 +37,12 @@ body {
     position: relative;
     background-color: #111D55;
     color: #fcfcfc;
-    height: 100%;
     padding: 0 2.4rem;
     border-right: 1px solid #fcfcfc;
 }
 
 .menu-icon {
     font-size: 3rem;
-    display: none;
-}
-
-.mobile-logo {
     display: none;
 }
 
@@ -120,6 +115,11 @@ body {
     position: sticky;
     top: 0;
     z-index: 1;
+}
+
+.mobile-logo {
+    display: none;
+    width: 50%;
 }
 
 .ph-bell {
@@ -441,8 +441,8 @@ body {
     }
 
     .ph-caret-right {
-    color: #2B48D5;
-    font-size: 1.2rem;
+        color: #2B48D5;
+        font-size: 1.2rem;
     }
 }
 
@@ -458,14 +458,14 @@ body {
     }
 
     .sidebar {
-        display: block;
+        display: none;
         height: 100vh;
         padding: 3rem;   
     }
 
     .main-nav-link:link, 
     .main-nav-link:visited{
-        font-size: 2rem;
+        font-size: 2.4rem;
     }
 
     .main-nav-list {
@@ -487,6 +487,7 @@ body {
     .logo-menu-container {
         display: flex;
         align-items: center;
+        justify-content: space-between;
         gap: 12rem;
     }
 
@@ -518,9 +519,9 @@ body {
         font-size: 3.4rem;
     }
 
-    /* .main-body {
-        display: none;
-    } */
+    .main-body {
+        display: block;
+    }
 
     .question-section {
         grid-template-columns: 1fr;
@@ -554,10 +555,24 @@ body {
         font-size: 1.4rem;
     }
 
+    .question-description p,
+    .faq-support-section p {
+        font-size: 1.8rem;
+        line-height: 1.4;
+    }
+
     .faq-support-section {
         grid-template-columns: 1fr;
         text-align: center;
         padding: 1.2rem 3rem;
+    }
+
+    .faq-link:link,
+    .faq-link:visited,
+    .support-link:link,
+    .support-link:visited {
+        justify-content: center;
+        font-size: 1.8rem;
     }
 
     .view-faqs {
@@ -577,14 +592,23 @@ body {
         font-size: 1.6rem;
     }
 
-    /** TEST */
+@media (max-width: 30em) {
+    .main-nav-link:link, 
+    .main-nav-link:visited{
+        font-size: 2.2rem;
+    }
 
+    .header {
+        padding-left: 2.4rem;
+        padding-right: 2.4rem;        
+    }
 
-
-
-
+    .question-section {
+        padding-left: 2.4rem;
+        padding-right: 2.4rem;
+    }
 }
-
+}
 
 
 
