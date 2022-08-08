@@ -16,7 +16,7 @@ body{
 }
 .signup_left,.login_right{
     flex: 42%;
-    background-image: url(./signup_images/login_pattern.png);
+    background-image: url(https://i.ibb.co/L5J6G8n/login-pattern.png); 
     text-align: center;
     background-size: 100%; 
 }
@@ -69,6 +69,7 @@ body{
     text-align: center;
     color: #3b3b3b;
     margin-bottom: 1.5rem;
+    line-height: 24px;
 }
 input[type=text], input[type=email], input[type=password]{
     border: 1px solid;
@@ -80,7 +81,8 @@ input[type=text], input[type=email], input[type=password]{
 }
 label{
     font-weight: 700;
-    color: #523f38;
+    color: #626262;
+    line-height: 24px;
 }
 .agree{
     font-weight: 400;
@@ -88,6 +90,7 @@ label{
     font-size: 14px;
     margin-left: 0.75rem;
     margin-bottom: 6%;
+    line-height: 24px;
 }
 input[type=button]{
     border-radius: 6px;
@@ -100,6 +103,7 @@ input[type=button]{
     border: none;
     font-weight: 800;
     font-size: 16px;
+    line-height: 24px;
 }
 .hr_container{
     display: flex;
@@ -120,7 +124,9 @@ button{
     font-weight: 800;
     font-size: 16px;
     border: 1px solid #c5bfbd;
-    background-color: #fcfcfc
+    background-color: #fcfcfc;
+    line-height: 24px;
+    
 }
  button img{ 
     width: 1.5rem;
@@ -137,5 +143,35 @@ a{
     text-decoration: none;
     font-size: 14px;
     font-weight: 400;
+}
+.signup_card .logo, .login_card .logo{
+    display: none;
+}
+@media screen and ( max-width:732px){
+    .signup_left, .login_right{
+        display: none;
+    }
+    .signup_right, .login_left{
+        padding: 0px;
+    }
+    .signup_card, .login_card{
+        padding: 1.5rem;
+        box-shadow: none;
+    }
+    .signup_right h2, .login_left h2{
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 48px;
+        color: #141414;
+    }
+    .signup_card .logo, .login_card .logo{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        margin: auto;
+        padding-bottom: 24px;
+    }
+
+    
 }
 
