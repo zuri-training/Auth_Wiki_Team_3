@@ -119,7 +119,7 @@ body {
 
 .mobile-logo {
     display: none;
-    width: 50%;
+    width: 40%;
 }
 
 .ph-bell {
@@ -488,6 +488,14 @@ body {
         color: #2B48D5;
         font-size: 1.2rem;
     }
+
+    .footer {
+        font-size: 1.2rem;
+    }
+
+    .footer-logo {
+        width: 25%;
+    }
 }
 
 @media (max-width: 48em) {
@@ -503,7 +511,7 @@ body {
 
     .sidebar {
         display: none;
-        height: 100vh;
+        height: 100%;
         padding: 3rem;   
     }
 
@@ -653,6 +661,10 @@ body {
         display: block;
     }
 
+    .footer-logo {
+        width: 30%;
+    }
+
 @media (max-width: 30em) {
     .main-nav-link:link, 
     .main-nav-link:visited{
@@ -664,9 +676,22 @@ body {
         padding-right: 2.4rem;        
     }
 
+    .mobile-logo {
+        width: 50%;
+    }
+
+
     .question-section {
         padding-left: 2.4rem;
         padding-right: 2.4rem;
+    }
+
+    .footer {
+        font-size: 0.8rem;
+    }
+
+    .footer-logo {
+        width: 40%;
     }
 }
 }

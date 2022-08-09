@@ -132,7 +132,7 @@ body {
 
 .mobile-logo {
     display: none;
-    width: 50%;
+    width: 40%;
 }
 
 .search-input-filter {
@@ -475,6 +475,14 @@ body {
     .no-info {
         font-size: 2rem;
     }
+
+    .footer {
+        font-size: 1.2rem;
+    }
+
+    .footer-logo {
+        width: 25%;
+    }
 }
 
 @media (max-width: 48em) {
@@ -490,7 +498,7 @@ body {
 
     .sidebar {
         display: none;
-        height: 100vh;
+        height: 100%;
         padding: 3rem;   
     }
 
@@ -605,10 +613,15 @@ body {
     .mobile-copyright-container {
         display: flex;
         justify-content: space-between;
+        margin-top: 1.2rem;
     }
 
     .copyright-container {
         display: block;
+    }
+
+    .footer-logo {
+        width: 30%;
     }
 
 @media (max-width: 30em) {
@@ -622,9 +635,21 @@ body {
         padding-right: 2.4rem;        
     }
 
+    .mobile-logo {
+        width: 50%;
+    }
+
     .welcome-section {
         padding-left: 2.4rem;
         padding-right: 2.4rem;
+    }
+
+    .footer {
+        font-size: 0.8rem;
+    }
+
+    .footer-logo {
+        width: 40%;
     }
 }
 
