@@ -2,6 +2,8 @@
 
 body {
   font-family: "Manrope", sans-serif;
+  width: 100%;
+  max-width: 100%;
 }
 
 .navbar-nav {
@@ -104,69 +106,9 @@ body {
   font-size: 8px;
 }
 
-/* responsive CSS for index goes here */
-
-/* CSS for dashboard begins here */
-
-/* .search-navbar {
-  justify-content: right;
+section {
+  display: none;
 }
-
-.sidenav-items {
-  width: 25em;
-  height: 90em;
-  padding-top: 20em;
-  background-color: #111d55;
-  color: white;
-  position: fixed;
-  top: 0px;
-  left: 0px;
-  z-index: index;
-}
-
-.sidenav-img {
-  width: 9em;
-  position: fixed;
-  top: 2em;
-  left: 2.6em;
-  margin-left: 2em;
-}
-
-.nav-link {
-  text-decoration: none;
-  color: white;
-  font-size: 1.2em;
-  padding: 1.2em;
-}
-
-.nav-link:hover {
-  background-color: white;
-  border: 1px solid white;
-  color: #111d55;
-}
-
-.menu-list {
-  list-style-type: none;
-  text-align: left;
-}
-
-.side-nav-list {
-  position: fixed;
-  top: 8em;
-  left: 1.2em;
-}
-
-.main-dashboard-header {
-  background-image: url("/assets/Frame84.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: max-content;
-  padding: 4em;
-}
-
-/* uncomment this later */
-/* section{display: none;} */
 
 td {
   width: 4em;
