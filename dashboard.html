@@ -1,0 +1,215 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/framework/bootstrap.min.css">
+    <link rel="stylesheet" href="dashboard.css">
+    <title>Dashboard</title>
+</head>
+<body>
+
+    <div class="app">
+
+        <div class="menu-toggle">
+            <div class="hamburger">
+                <span></span>
+            </div>            
+        </div>
+        <aside class="sidebar">
+            <div class="head d-flex text-white" id="head">
+                <i><img class="ladder" src="./res/ladder.png" alt=""></i>
+                <h3>Auth Wiki</h3>
+            </div>
+            <hr>
+            <nav class="menu">
+                    <div class="tag is-active" id="books">
+                        <i><img class="books" src="./res/books.png" alt=""></i><a href="#">Browse Library</a>
+                    </div>
+                    <div class="tag">
+                        <i><img class="users" src="./res/users-three.png" alt=""></i><a href="#" class="menu-item is-active">Community</a>
+                    </div>
+                    <div class="tag">
+                        <i><img class="gear-six" src="./res/gear-six.png" alt=""></i><a href="#" class="menu-item">Settings</a>
+                    </div>
+                    <div class="tag" id="tg">
+                        <i><img class="question" src="./res/question.png" alt=""></i><a href="#" class="menu-item">Help</a>
+                    </div>
+                    <div class="tag">
+                        <i><img class="sign" src="./res/sign-out.png" alt=""></i><a href="#" class="menu-item">Logout</a>
+                    </div>
+            </nav>
+        </aside>
+        <main class="content">`
+            <nav class="navba navbar-light bg-" id="nav1">
+                <div class="head d-flex d-md-none " id="head1">
+                    <i><img class="ladder" src="./res/ladder (1).png" alt=""></i>
+                    <h3>Auth Wiki</h3>
+                  </div>
+                <div class="container-fluid" id="nav">
+                    <form class="nosubmit">
+                        <input class="nosubmit" type="search" placeholder="Search...">
+                      </form>
+                      <img src="./res/sliders.png" alt="" class="sliders">
+                      <img class="bell" src="./res/bell.png" alt="">
+                      <img class="ppix" src="./res/IMG_20200623_154713_630.jpg" alt="ppix">
+                      <p class="user_name">Jane Doe</p>
+                </div>
+            </nav>
+            <div class="container-fluid" id="two-factor">
+                <div class="arrow">
+                    <img class="Arrow" src="./res/202-2022960_left-white-arrow-icon-hd-png-download-removebg-preview.png" alt="arrow">
+                </div>
+                    <div class="first-text">
+                        <p class="two-one">Two-factor<br> authentication</p>
+                        <p class="two-two">Uploaded Date : 21 July 2022</p>
+                        <div class="ratings">
+                            <div class="heart-main">
+                                <img class="heart" src="./res/heart.png" alt="">
+                                <p class="num-one">30</p>
+                            </div>
+                            <div class="save-main">
+                                <img class="save" src="./res/Frame_8_1_-removebg-preview.png" alt="">
+                                <p class="num-two">20</p>
+                            </div>
+                            <div class="comment-main">
+                                <img class="commentt" src="./res/images-removebg-preview (2).png" alt="">
+                                <p class="num-three">2</p>
+                            </div>
+                        </div>
+                        <div class="section">
+                            <p class="two-three">Language: </p>
+                            <div class="dropdown">
+                                <button class="dropbtn">Python<img class="drop" src="./res/drop icon.png"></button>
+                                <div class="dropdown-content">
+                                  <a href="#">JavaScript</a>
+                                  <a href="#">C++</a>
+                                  <a href="#">Java</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tech">
+                        <img class="tech-image" src="./res/What-is-Two-factor-Authentication-Definition-Process-and-Best-Practices.jpg" alt="">
+                    </div>  
+                </div>
+                <div class="container-fluid d-flex" id="download" >
+                    <div class="container-fluid d-flex m-3 justify-content-around d-sm-none d-md-flex">
+                        <a class="text-decoration-none text-dark bg-light m-2 d-sm-none d-md-flex" id="active" href="#code-dis">Code Description</a><br><br>
+                        <a class="text-decoration-none text-dark bg-light m-2" href="#Example">Example</a>
+                        <a class="text-decoration-none text-dark bg-light m-2" href="#code-area">Code</a>
+                        <a class="text-decoration-none text-dark bg-light m-2" href="#Comment">Comments</a>
+                    </div>
+                    <div class="but m-3 justify-item-end px-5 bg- " id="but">
+                        <button type="button" class="btn btn-primary align-end mx-5">Download</button>
+                    </div>
+                </div>
+                <div class="code-dis" id="code-dis">
+                    <h3>Code Description</h3>
+                    <p>Two-factor authentication (2FA) can help protect your applications from password data leaks. Authentication with a one-time password (OTP) supplied by SMS to your users is an efficient method of implementing two-factor authentication.
+                        Premium direct routes from Auth Wiki ensure the highest possible delivery rates and the quickest possible delivery timeframes for your 2FA SMS messages. </p>
+                </div>
+                <div class="Example" id="Example">
+                    <h3>Example</h3>
+                    <p>Two-factor authentication (2FA) can help protect your applications from password data leaks. Authentication with a one-time password (OTP) supplied by SMS to your users is an efficient method of implementing two-factor authentication.
+                        Premium direct routes from Auth Wiki ensure the highest possible delivery rates and the quickest possible delivery timeframes for your 2FA SMS messages.  </p>
+                </div>
+                <div class="code" id="code-area">
+                    <h3>Code</h3>
+                    <p>Use the Time-Based OTP algorithm to generate a random six-digit one-time password (OTP). </p>
+                    <div class="code-area">
+                        <p class="codded">def send_verification_code_sms(self, dst_number: str, message):
+                            """<br>
+                            `send_verification_code` accepts destination number
+                            to which the message that has to be sent.<br>
+                    
+                            The message text should contain a `__code__` construct
+                            in the message text which will be
+                            replaced by the code generated before sending the SMS.<br>
+                        
+                            :param: dst_number
+                            :param: message
+                            :return: verification code
+                            """<br>
+                            try:<br>
+                                response = self.client.messages.create(
+                                    src=self.app_number, dst=dst_number, text=message
+                                )<br>
+                                print(response)<br>
+                                return response<br>
+                            except exceptions as e:<br>
+                                print(e)<br>
+                                return "Error encountered", 400<br>
+                    </p>
+                        <span class="copyd"><img class="copy" src="./res/copy.png" alt="">Copy</span>
+                    </div>
+                </div>
+                <div class="Comment" id="Comment">
+                    <h3>Comments</h3>
+                    <textarea rows="4" cols="50" name="comment" form="usrform" title="Type Something here"></textarea>
+                    <div class="butt-com">
+                        <button class="butt" action="submit">Send</button>
+                    </div>
+                </div>
+                <div class="social">
+                    <div class="socialt">
+                        <img class="ppixt" src="./res/IMG_20200623_154713_630.jpg" alt="ppix">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="socialtt">
+                        <h3>Oluwatosin</h3>
+                        <p>Stay safe everyone. Remain vigilant. Please enable 2FA Authentication, preferrably using an OTP App like Authy or Google Authenticator.Stay safe everyone. Remain vigilant. Please enable 2FA Authentication, preferrably using an OTP App like Authy or Google Authenticator.</p>
+                    </div>
+                    <div class="col">
+                        <div class="heart-maint">
+                            <img class="heartt" src="./res/heart (1).png" alt=""><br><br>
+                            <p class="num-onet">3</p>
+                        </div>
+                        <div class="link">
+                            <a class="rep" href="#">Reply</a>
+                        </div>
+                        <p class="hr">6hrs</p>
+                    </div>
+                    <hr>
+                    <div class="socialtd">
+                        <img class="ppixtt" src="./res/bisola.jpg" alt="ppix">
+                        <div class="circlet"></div>
+                    </div>
+                    <div class="socialtt">
+                        <h3>Bisola</h3>
+                        <p>Stay safe everyone. Remain vigilant. Please enable 2FA Authentication, preferrably using an OTP App like Authy or Google Authenticator.Stay safe everyone. Remain vigilant. Please enable 2FA Authentication, preferrably using an OTP App like Authy or Google Authenticator.</p>
+                    </div>
+                    <div class="col">
+                        <div class="heart-maint">
+                            <img class="heartt" src="./res/heart (1).png" alt=""><br><br>
+                            <p class="num-onet">10</p>
+                        </div>
+                        <div class="link">
+                            <a class="rept" href="#">Reply</a>
+                        </div>
+                        <p class="hr">6hrs</p>
+                    </div>          
+                </div>
+                <div class="footer">
+                    <li class="logof">
+                        <i><img class="ladder" src="./res/ladder.png" alt=""></i>
+                        <h3>Auth Wiki</h3>
+                    </li>
+                    <div class="under-bottom">
+                        <p class="pt">2021 - 2022 Auth Wiki® Inc. All Rights Reserved.</p>
+                        <a class="privt" href="#">Privacy Policy</a>
+                        <a class="tret" href="#">Terms</a>
+                    </div> 
+                </div> 
+            </div>
+            
+        </main>
+
+
+    </div>
+   
+
+    <script src="/assets/framework/bootstrap.min.js"></script>
+    <script src="dashboard.js"></script>
+</body>
+</html>
