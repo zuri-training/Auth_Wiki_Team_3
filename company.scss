@@ -1,94 +1,95 @@
-header{
-    // .container{
-    //     .d-flex{
-    //         margin: 0;
-    //         padding: 0;
-    //     }
-    // }
-    // height: 5rem;
-    // width: 100%;
-    // a{
-    //     color: currentColor;
-    //     padding: 0;
-    //     margin: 0;
-    // }
-    // .Lists{
-    //     line-height: 70px;
-    //     ul{
-    //         li{
-    //             padding: 0px 15px;
-    //         }
-    //     }
-    //     .secondDiv{
-    //         display: flex;
-    //         margin-top: 15px;
-    //         button{
-    //             height: 38px;
-    //             margin-right: 5px;
-    //             width: 125px;
-    //             left: 226px;
-    //             top: 19px;
-    //             border-radius: 8px;
-    //             padding: 12px, 16px, 12px, 16px;
-    //             background: #3456FF;
-    //             border: none;
-    //             font-size: 16px;
-    //             font-weight: 600;
-    //             line-height: 10px;
-    //             text-align: center;
-    //             color: #FCFCFC;
-    //         }
-    //     }
-    // }
+// header{
+//     // .container{
+//     //     .d-flex{
+//     //         margin: 0;
+//     //         padding: 0;
+//     //     }
+//     // }
+//     // height: 5rem;
+//     // width: 100%;
+//     // a{
+//     //     color: currentColor;
+//     //     padding: 0;
+//     //     margin: 0;
+//     // }
+//     // .Lists{
+//     //     line-height: 70px;
+//     //     ul{
+//     //         li{
+//     //             padding: 0px 15px;
+//     //         }
+//     //     }
+//     //     .secondDiv{
+//     //         display: flex;
+//     //         margin-top: 15px;
+//     //         button{
+//     //             height: 38px;
+//     //             margin-right: 5px;
+//     //             width: 125px;
+//     //             left: 226px;
+//     //             top: 19px;
+//     //             border-radius: 8px;
+//     //             padding: 12px, 16px, 12px, 16px;
+//     //             background: #3456FF;
+//     //             border: none;
+//     //             font-size: 16px;
+//     //             font-weight: 600;
+//     //             line-height: 10px;
+//     //             text-align: center;
+//     //             color: #FCFCFC;
+//     //         }
+//     //     }
+//     // }
 
-    // .togglerBtn{
-    //     .container {
-    //         display: inline-block;
-    //         cursor: pointer;
-    //       }
+//     // .togglerBtn{
+//     //     .container {
+//     //         display: inline-block;
+//     //         cursor: pointer;
+//     //       }
           
-    //       .bar1, .bar2, .bar3 {
-    //         width: 35px;
-    //         height: 5px;
-    //         background-color: #333;
-    //         margin: 6px 0;
-    //         transition: 0.4s;
-    //       }
+//     //       .bar1, .bar2, .bar3 {
+//     //         width: 35px;
+//     //         height: 5px;
+//     //         background-color: #333;
+//     //         margin: 6px 0;
+//     //         transition: 0.4s;
+//     //       }
           
-    //       .change .bar1 {
-    //         -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-    //         transform: rotate(-45deg) translate(-9px, 6px);
-    //       }
+//     //       .change .bar1 {
+//     //         -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+//     //         transform: rotate(-45deg) translate(-9px, 6px);
+//     //       }
           
-    //       .change .bar2 {opacity: 0;}
+//     //       .change .bar2 {opacity: 0;}
           
-    //       .change .bar3 {
-    //         -webkit-transform: rotate(45deg) translate(-8px, -8px);
-    //         transform: rotate(45deg) translate(-8px, -8px);
-    //       }
-    // }
-}
-@media screen and (min-width: 999px) {
-    // .headerLogo{
-    //     img{
-    //         height: 5rem;
-    //     }
-    // }
-}
-@media screen and (max-width: 998px) {
-    // header{
-    //     width: 100%;
+//     //       .change .bar3 {
+//     //         -webkit-transform: rotate(45deg) translate(-8px, -8px);
+//     //         transform: rotate(45deg) translate(-8px, -8px);
+//     //       }
+//     // }
+// }
+// @media screen and (min-width: 999px) {
+//     // .headerLogo{
+//     //     img{
+//     //         height: 5rem;
+//     //     }
+//     // }
+// }
+// @media screen and (max-width: 998px) {
+//     // header{
+//     //     width: 100%;
 
-    //     img{
-    //         width: 8rem;
-    //         height: 35px;
-    //         margin-top: 20px;
-    //     }
+//     //     img{
+//     //         width: 8rem;
+//     //         height: 35px;
+//     //         margin-top: 20px;
+//     //     }
 
-    // }
-}
+//     // }
+// }
 
 footer{
+    font: manrobe;
     background: #111D55;
     width: 100%;
     color: #F4F4F4;
@@ -96,6 +97,8 @@ footer{
     padding: 30px 0px;
     a{
         color: currentColor;
+        text-decoration: underline;
+        // text-decoration: ;
     }
     a:hover{
         color: currentColor;
@@ -193,7 +196,7 @@ footer{
 }
 //for company page
 section{
-    font: Manrope;
+     
     padding: 0;
     margin: 0;
     .aboutUs{
@@ -432,65 +435,30 @@ section{
     margin: 0;
     .example{
         .firstDiv{
-            padding: 20px 0px;
-            h5{
-                font-family: Manrope;
-                font-size: 38px;
-                font-weight: 700;
-                line-height: 52px;
-                // margin-top: 10px;
-                // margin-bottom: 30px;
-                // font-size: 20px;
-                // font-weight: 700;
-                // line-height: 40px;
-            }
-            p{
-                font-size: 24px;
-                font-weight: 400;
-                line-height: 38px;
-                color: #141414;
-            }
-            img{
-                height: 26rem;
-                margin-top: 45px 0px;
-            }
-            button{
-                background-color: #3456FF;
-                width: 100%;
-                font-size: 15px;
-                font-weight: 500;
-                height: 3rem;
-                margin: 30px 0px;
-            }
-            .searchBox{
-                margin: 3rem 0px;
-                width: 100%;
-                text-align: center;
-               .inputArea{
-                    border: 1px solid black;
-                    border-radius: 5px;
-                    padding: 0px 10px;
-                   img{
-                       width: 2rem;
-                       height: 1.5rem;
-                       padding: 0px 5px;
-                       margin-top: 10px;
-                       font-size: 100px;
-                   }
-                   input{
-                    width: 100%;
-                    padding: 0px 20px;
-                    margin: 0;
-                    padding: 0;
+            .icons{
+                img{
+                    width: 1.5rem;
+                    height: 1.5rem;
+                }
+                input{
+                    width: 30px;
+                    height: 25px;
+                    margin-left: 5px;
                     border: none;
-                   }
-                   input:focus{
-                    border: none;
-                   }
-               }
+                }
+            }
+
+            .LanguageDropDown{
+                select{
+                    border: 1px solid red;
+                    
+                }
+            }
+            ul{
+                border: 1px solid red;
             }
         }
-        
+
         .secondDiv{
             padding: 20px 0px;
             background: #F1F1F1;     
@@ -587,7 +555,6 @@ section.documentation{
     .firstDiv{
         padding: 20px 0px;
         h5{
-            font-family: Manrope;
             font-size: 38px;
             font-weight: 700;
             line-height: 52px;
