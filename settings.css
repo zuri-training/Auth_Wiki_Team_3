@@ -517,6 +517,24 @@ cursor: pointer;
     display:none;
 }
 
+
+.secondFooter > .container{
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+
+.secondFooter > .container >.row >.row{
+   justify-content: center;
+   align-items: center;
+}
+
+.wiki_inc{
+    margin-top: 30px;
+}
+
+
+/* /////////////////////////////////////////////////////////////////// */
+
 @media (max-width:500px) {
    
     .nav__top >img{
