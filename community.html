@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Inter:wght@400;500;700&family=Lexend+Deca&family=Manrope:wght@400;500;600;700&family=Merriweather:wght@300&family=Montserrat&family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;700;900&family=Rubik:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Sacramento&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="community.css" />
+    <script src="https://unpkg.com/phosphor-icons"></script>
+    <title>Community</title>
+  </head>
+  <body>
+    <div class="sidebar">
+        <div class="logo-menu-container">
+            <div class="menu-icon close-menu">
+                <i class="ph-x"></i>
+            </div>
+            <img src="./assets/images/Logo.png" class="logo" alt="Auth Wiki Logo">
+        </div>
+        <a href="index.html"
+          ><img src="/assets/images/Logo.png" class="logo" alt="Auth Wiki Logo"
+        /></a>
+      </div>
+      <nav class="main-nav">
+        <div class="top-nav">
+          <ul class="main-nav-list">
+            <li class="library main-nav-list-item">
+              <a href="#" class="main-nav-link"
+                ><i class="ph-books main-nav-icon"></i
+                ><span>Browse Library</span></a
+              >
+              <!--! Link to library -->
+            </li>
+            <li class="community main-nav-list-item">
+              <a href="community.html" class="main-nav-link"
+                ><i class="ph-users-three main-nav-icon"></i
+                ><span>Community</span></a
+              >
+              <!--* Link to community-->
+            </li>
+            <li class="settings main-nav-list-item">
+              <a href="settings.html" class="main-nav-link"
+                ><i class="ph-gear-six main-nav-icon"></i
+                ><span>Settings</span></a
+              >
+              <!--& Link to settings -->
+            </li>
+          </ul>
+        </div>
+        <div class="main-body">
+            <header class="header">
+                <div class="menu-icon open-menu">
+                <i class="ph-list"></i>
+                </div>
+                <img src="./assets/images/Header Logo.png" class="mobile-logo" alt="Auth Wiki Logo">
+                <div class="search-box non-mobile">
+                    <div class="search-input-filter">
+                        <input type="text" class="search-input" placeholder="What are you looking for?">
+                        <i class="ph-sliders"></i>
+                    </div>
+                    <span><i class="ph-magnifying-glass"></i></span>
+                </div>
+                <div class="profile">
+                    <i class="ph-bell"></i>
+                    <img src="./assets/images/Jane Doe.jpg" class="profile-picture" alt="Profile Picture">
+                    <p class="profile-name">Jane Doe</p>
+                </div>
+            </header>
+            
+            <main class="main">
+                <section class="welcome-section">
+                    <div class="welcome-description">
+                        <h2 class="heading-secondary">Welcome to the Auth Wiki Community</h2>
+                        <p>You can also access the most recent information about new or updated authentication codes. </p>
+                    </div>
+                    <div class="welcome-img-box">
+                        <img src="./assets/images/pexels-kindel-media-7148409.jpg" class="welcome-img"  alt="Group of young people">
+                    </div>
+                </section>
+
+                <section class="information-section">
+                    <div class="search-box mobile">
+                        <div class="search-input-filter">
+                            <input type="text" class="search-input" placeholder="What are you looking for?">
+                            <i class="ph-sliders"></i>
+                        </div>
+                        <span><i class="ph-magnifying-glass"></i></span>
+                    </div>                    
+                    <div class="left">
+                        <img src="./assets/images/loud-speaker.png" class="loud-speaker" alt="Loud Speaker">
+                    </div>
+                    <div class="right">
+                        <span class="no-info">No new Information </span>
+                        <p>You can check back later</p>
+                    </div>
+                </section>
+            </main>
+            <footer class="footer">
+                <img src="./assets/images/Logo.png" class="footer-logo" alt="Footer Logo">
+                <div class="copyright-container">
+                    <p class="copyright">2021 - 2022 Auth Wiki &copy; Inc. <span class="reserved-non-mobile">All Rights Reserved.</span></p>
+                    <div class="mobile-copyright-container">
+                        <p class="reserved-mobile">All Rights Reserved.</p>
+                        <div class="privacy-terms">
+                            <a href="#" class="privacy-terms-link">Privacy Policy</a>
+                            <a href="#" class="privacy-terms-link">Terms</a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    <script src="community.js"></script>
+  </body>
+</html>

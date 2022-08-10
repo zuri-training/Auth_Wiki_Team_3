@@ -1,59 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Log In</title>
+    <link rel="stylesheet" href="signup.css" />
+    <link
+      href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css"
+      rel="stylesheet"
+    />
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Auth_Wiki_LogIn</title>
-    <link rel="stylesheet" href="signup.css">
-    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
-</head>
-
-<body>
+  <body>
     <div class="container">
-
-        <div class="login_left">
-            <div class="login_card">
-                <h2>Log In</h2>
-                <p>Fill in your details to login in your account</p>
-                <form action="" method="post">
-                    <label for="email">Email Address</label><br>
-                    <input type="email" name="email" id="" placeholder="name@email.com" required><br>
-                    <label for="password">Password</label><br>
-                    <input type="password" name="password=" placeholder="Create a password" required><br>
-                    <div class="forgot">
-
-                        <a href="./forget_password.html">Forgot Password ?</a>
-                    </div>
-                    <input type="button" value="SIgn In">
-                    
-
-                    <div class="hr_container">
-                        <hr>
-
-                        <p>or</p>
-
-                        <hr>
-                    </div>
-                    <button type="submit"><img src="./signup_images/icons8-linkedin.svg" alt=""> Continue with
-                        LinkedIn</button><br>
-                    <button type="submit"> <img src="./signup_images/icons8-github.svg" alt=""> Continue with Github</button>
-                    <p class="already">Don't have an account?<a href="./signup.html">Sign Up</a></p>
-                </form>
+      <div class="login_left">
+        <div class="login_card">
+          <img
+            class="logo"
+            src="https://i.ibb.co/bs3XVyB/Group-367-removebg-preview.png"
+            alt="Group-367-removebg-preview"
+            border="0"
+          />
+          <h2>Log In</h2>
+          <p>Fill in your details to login in your account</p>
+          <form action="" method="post">
+            <label for="email">Email Address</label><br />
+            <input
+              type="email"
+              name="email"
+              id=""
+              placeholder="name@email.com"
+              required
+            /><br />
+            <label for="password">Password</label><br />
+            <input
+              type="password"
+              name="password="
+              placeholder="Create a password"
+              required
+            /><br />
+            <div class="forgot">
+              <a href="./forget_password.html">Forgot Password ?</a>
             </div>
-        </div>
-        <div class="login_right">
-            <img src="./signup_images/login_logo_white.png" alt="">
-            <div class="login_intro">
-                <div>
-                    <h2>Welcome back</h2>
-                    <p>Just one stop for all your authentication codes</p>
-                </div>
-            </div>
-        </div>
+            <input type="button" value="SIgn In" />
 
+            <div class="hr_container">
+              <hr />
+
+              <p>or</p>
+
+              <hr />
+            </div>
+            <button type="submit">
+              <img src="https://img.icons8.com/color/48/000000/linkedin.png" />
+              Continue with LinkedIn</button
+            ><br />
+            <button type="submit">
+              <img
+                src="https://img.icons8.com/ios-filled/50/000000/github.png"
+              />
+              Continue with Github
+            </button>
+            <p class="already">
+              Don't have an account?<a href="./signup.html">Sign Up</a>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="login_right">
+        <a href="index.html"
+          ><img
+            src="https://i.ibb.co/9htWbZV/login-logo-white.png"
+            alt="login-logo-white"
+            border="0"
+        /></a>
+        <div class="login_intro">
+          <div>
+            <h2>Welcome back</h2>
+            <p>Just one stop for all your authentication codes</p>
+          </div>
+        </div>
+      </div>
     </div>
-</body>
-
+  </body>
 </html>
