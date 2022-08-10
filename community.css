@@ -6,6 +6,7 @@
 
 html {
     font-size: 62.5%;
+    height: 100%;
 }
 
 body {
@@ -13,6 +14,8 @@ body {
     margin: 0 auto;
     display: grid;
     grid-template-columns: 21.2% 1fr;
+    height: 100%;
+    overflow: hidden;
 }
 
 /**************************************/
@@ -45,8 +48,10 @@ body {
     position: relative;
     background-color: #111D55;
     color: #fcfcfc;
-    padding: 0 2.4rem;
+    padding: 0 2.4rem 8rem;
     border-right: 1px solid #fcfcfc;
+    height: 100%;
+    overflow-y: auto;
 }
 
 .logo {
@@ -55,23 +60,15 @@ body {
     width: 75%;
 }
 
-/* .main-nav {
-    display: flex;
-    flex-direction: column;
-    gap: 4rem;
-} */
+.main-nav {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 18rem;
+}
 
 .top-nav {
     margin-top: 4.4rem;
 }
-
-.bottom-nav {
-    position: absolute;
-    bottom: 12rem;
-    left: 2.4rem;
-    right: 2.4rem;
-}
-
 
 .main-nav-list {
     display: flex;
@@ -108,6 +105,9 @@ body {
 /**************************************/
 /*~ MAIN BODY */
 /**************************************/
+.main-body {
+    overflow-y: auto;
+}
 
 /**************************************/
 /*! HEADER */
