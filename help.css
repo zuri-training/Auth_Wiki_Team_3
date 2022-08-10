@@ -511,7 +511,7 @@ body {
 
     .sidebar {
         display: none;
-        height: 100%;
+        height: 100vh;
         padding: 3rem;   
     }
 
