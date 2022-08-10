@@ -21,12 +21,17 @@ body {
   margin-top: 1.6em;
   font-weight: bolder;
   line-height: 1.6em;
+  font-weight: 800 !important;
 }
 
 .blue-color {
   color: blue;
 }
-
+.fa-chevron-down {
+  padding-bottom: 1em;
+  padding-top: 0;
+  font-size: larger;
+}
 .top-image {
   margin-top: 1.6em;
 }
@@ -55,10 +60,15 @@ body {
   background-position: bottom;
 }
 
+.trust {
+  font-weight: 600;
+}
+
 .featured {
   width: 6em;
   height: 6em;
-  margin: 4em 1em 4em;
+  padding: 1em;
+  /* margin: 4em 1em 0 1em; */
 }
 
 .hand1 {
@@ -103,7 +113,7 @@ body {
   color: white;
   text-decoration: none;
   padding: 1em;
-  font-size: 8px;
+  font-size: 13px;
 }
 
 section {
