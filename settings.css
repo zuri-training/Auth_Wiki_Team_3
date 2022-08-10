@@ -11,6 +11,8 @@ body{
     display: flex;
     /* overflow: hidden; */
     font-family: 'Manrope', sans-serif;
+        /* overflow-y:hidden;
+      overflow-x:hidden; */
 }
 
 
@@ -19,9 +21,11 @@ body{
     height: 100vh;
     display: flex;
     flex-direction: column;
+    position: fixed;
     flex: 1;
     justify-content: space-between;
-   /* position: fixed; */
+       overflow-y:hidden;
+      overflow-x:hidden;
 }
 
 .nav__top{
@@ -32,7 +36,7 @@ body{
     /* align-items: center; */
 }
 
-.nav__top >img{
+.nav__top >a>img{
     width: 12rem;
     align-self: center;
     margin: 5px 10px;
@@ -133,6 +137,10 @@ hr{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding-left: 15rem;
+    /* margin: auto; */
+    /* align-self: flex-end; */
+    
     /* margin-left:100px; */
 }
 
@@ -141,6 +149,7 @@ hr{
 .main{
     width: 90%;
     margin: 0 auto;
+    /* overflow: auto !important; */
 }
 
 .content__one{
@@ -160,9 +169,31 @@ hr{
     justify-content: center;
 }
 
+.user__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.user__img{
+    width: 40px;
+    height:40px;
+    border-radius: 50%;
+}
+
+.user__img >img{
+width: 100%;
+height: 100%;
+border-radius: 50%;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
 .user >img{
     width: 1.5rem;
     margin-right: 1rem;
+    cursor: pointer;
 }
 .user__container{
     background-color: #F1F1F1;
@@ -196,7 +227,7 @@ hr{
 }
 .user__info__left>p{
     font-size: 15px;
-    padding-right: 3rem;
+    padding-right: 4rem;
 }
 
 form{
@@ -342,6 +373,7 @@ border-radius: 4px;
 color: #3456FF;
 font-size: 14px;
 text-align: center;
+cursor: pointer;
 }
 
 
@@ -485,6 +517,24 @@ cursor: pointer;
     display:none;
 }
 
+
+.secondFooter > .container{
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+
+.secondFooter > .container >.row >.row{
+   justify-content: center;
+   align-items: center;
+}
+
+.wiki_inc{
+    margin-top: 30px;
+}
+
+
+/* /////////////////////////////////////////////////////////////////// */
+
 @media (max-width:500px) {
    
     .nav__top >img{
@@ -539,6 +589,7 @@ cursor: pointer;
 .content__one{
     display:none;
 }
+
 
 .img__container{
     align-items: flex-start;
@@ -638,7 +689,7 @@ cursor: pointer;
     display:flex;
     justify-content:space-between;
     align-items: center;
-    width:90vw;
+    width:85vw;
 }
 .nav__mobile__logo{
     width: 9rem;
@@ -652,4 +703,59 @@ cursor: pointer;
     cursor: pointer;
    
 }
+
+.secondFooter > .container{
+    padding-left: 0;
+    padding-right: 0;
 }
+}
+
+
+@media screen and (max-width : 1000px) {
+
+    .content{      
+        padding-left: 20rem;
+    }
+    
+    }
+
+@media screen and (max-width : 900px) {
+
+
+.content{
+  
+    padding-left: 20rem;
+
+}
+
+}
+@media screen and (max-width : 800px) {
+
+
+.content{
+  
+    padding-left: 20rem;
+
+}
+
+}
+@media screen and (max-width : 700px) {
+
+
+.content{
+  
+    padding-left: 20rem;
+
+}
+
+}
+@media screen and (max-width : 500px) {
+
+
+    .content{
+      
+        padding-left: 0;
+    
+    }
+    
+    }
