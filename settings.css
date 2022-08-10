@@ -36,7 +36,7 @@ body{
     /* align-items: center; */
 }
 
-.nav__top >img{
+.nav__top >a>img{
     width: 12rem;
     align-self: center;
     margin: 5px 10px;
@@ -137,7 +137,7 @@ hr{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding-left: 15rem;
+    /* padding-left: 15rem; */
     /* margin: auto; */
     /* align-self: flex-end; */
     
@@ -149,7 +149,7 @@ hr{
 .main{
     width: 90%;
     margin: 0 auto;
-    overflow: auto !important;
+    /* overflow: auto !important; */
 }
 
 .content__one{
@@ -590,6 +590,7 @@ cursor: pointer;
     display:none;
 }
 
+
 .img__container{
     align-items: flex-start;
     margin-bottom: 60px;
@@ -702,6 +703,11 @@ cursor: pointer;
     cursor: pointer;
    
 }
+
+.secondFooter > .container{
+    padding-left: 0;
+    padding-right: 0;
+}
 }
 
 
@@ -746,3 +752,13 @@ cursor: pointer;
 }
 
 }
+@media screen and (max-width : 500px) {
+
+
+    .content{
+      
+        padding-left: 0;
+    
+    }
+    
+    }
