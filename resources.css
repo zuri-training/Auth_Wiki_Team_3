@@ -223,6 +223,11 @@ hr{
 .get_help img{
     width: 10rem;
 }
+
+.subscribe input[type="email"]::placeholder{
+    font-size: 20px;
+    line-height: 30px;
+}
 @media screen and ( max-width:732px ) {
     main{
         /* display: block; */
