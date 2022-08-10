@@ -137,7 +137,7 @@ hr{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    /* padding-left: 15rem; */
+    padding-left: 15rem;
     /* margin: auto; */
     /* align-self: flex-end; */
     
@@ -227,7 +227,7 @@ background-size: cover;
 }
 .user__info__left>p{
     font-size: 15px;
-    padding-right: 3rem;
+    padding-right: 4rem;
 }
 
 form{
@@ -689,7 +689,7 @@ cursor: pointer;
     display:flex;
     justify-content:space-between;
     align-items: center;
-    width:90vw;
+    width:85vw;
 }
 .nav__mobile__logo{
     width: 9rem;
@@ -713,11 +713,8 @@ cursor: pointer;
 
 @media screen and (max-width : 1000px) {
 
-
-    .content{
-      
+    .content{      
         padding-left: 20rem;
-    
     }
     
     }
