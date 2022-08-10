@@ -11,6 +11,8 @@ body{
     display: flex;
     /* overflow: hidden; */
     font-family: 'Manrope', sans-serif;
+        /* overflow-y:hidden;
+      overflow-x:hidden; */
 }
 
 
@@ -19,9 +21,11 @@ body{
     height: 100vh;
     display: flex;
     flex-direction: column;
+    position: fixed;
     flex: 1;
     justify-content: space-between;
-   /* position: fixed; */
+       overflow-y:hidden;
+      overflow-x:hidden;
 }
 
 .nav__top{
@@ -133,6 +137,10 @@ hr{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding-left: 15rem;
+    /* margin: auto; */
+    /* align-self: flex-end; */
+    
     /* margin-left:100px; */
 }
 
@@ -141,6 +149,7 @@ hr{
 .main{
     width: 90%;
     margin: 0 auto;
+    overflow: auto !important;
 }
 
 .content__one{
@@ -674,4 +683,47 @@ cursor: pointer;
     cursor: pointer;
    
 }
+}
+
+
+@media screen and (max-width : 1000px) {
+
+
+    .content{
+      
+        padding-left: 20rem;
+    
+    }
+    
+    }
+
+@media screen and (max-width : 900px) {
+
+
+.content{
+  
+    padding-left: 20rem;
+
+}
+
+}
+@media screen and (max-width : 800px) {
+
+
+.content{
+  
+    padding-left: 20rem;
+
+}
+
+}
+@media screen and (max-width : 700px) {
+
+
+.content{
+  
+    padding-left: 20rem;
+
+}
+
 }
