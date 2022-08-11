@@ -5,10 +5,84 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="resources.css" />
+    <link rel="stylesheet" href="style.css" />
     <title>Resources</title>
+    <!-- Bootstrap CSS v5.2.0-beta1 -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <!-- FontAwesome 6.1.1 CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- (Optional) Use CSS or JS implementation -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"
+      integrity="sha512-6PM0qYu5KExuNcKt5bURAoT6KCThUmHRewN3zUFNaoI6Di7XJPTMoT6K0nsagZKk2OB4L7E3q1uQKHNHd4stIQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
   </head>
 
   <body>
+    <!-- navigation area -->
+    <nav class="navbar navbar-expand-sm" style="background-color: white">
+      <div class="container">
+        <a class="navbar-brand" href="index.html"
+          ><img src="./Images/Header_Logo.png" alt="Auth_wiki_header_logo"
+        /></a>
+        <button
+          class="navbar-toggler d-lg-none"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapsibleNavId"
+          aria-controls="collapsibleNavId"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+          <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" href="documentation.html">Documentation</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="resources.html">Resources</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="company.html">Company</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="help.html">Help</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="login.html">Login</a>
+            </li>
+            <button class="btn btn-primary nav-btn">
+              <a
+                href="signup.html"
+                style="
+                  color: white;
+                  background-color: #3456ff;
+                  text-decoration: none;
+                "
+                >Try for Free</a
+              >
+            </button>
+          </ul>
+        </div>
+      </div>
+    </nav>
     <section>
       <input type="search" name="search" id="" placeholder="Search" />
     </section>
@@ -130,5 +204,103 @@
         <input type="button" value="Subscribe" />
       </form>
     </div>
+    <!-- footer section -->
+
+    <footer class="footer" style="background-color: #111d55; padding: 2em">
+      <div class="container-fluid">
+        <div class="row g-2">
+          <div class="col-md-3 col-xs-6">
+            <h2 style="color: white; margin-left: 1.7em; font-weight: bold">
+              Auth Wiki
+            </h2>
+            <ul class="footer-unordered-list-items">
+              <li class="listed-links">
+                <a class="footer-link" href="company.html">About us</a>
+              </li>
+              <li class="listed-links">
+                <a class="footer-link" href="#">Team</a>
+              </li>
+              <li class="listed-links">
+                <a class="footer-link" href="#">Customers and Partners</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-md-3 col-xs-6">
+            <h2 style="color: white; margin-left: 1.7em; font-weight: bold">
+              Developers
+            </h2>
+            <ul class="footer-unordered-list-items">
+              <li class="listed-links">
+                <a class="footer-link" href="documentation.html"
+                  >Documentation</a
+                >
+              </li>
+              <li class="listed-links">
+                <a class="footer-link" href="#">Guide and Tutorial</a>
+              </li>
+              <li class="listed-links">
+                <a class="footer-link" href="#">Bug Report</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-md-3 col-xs-6">
+            <h2 style="color: white; margin-left: 1.7em; font-weight: bold">
+              Resources
+            </h2>
+            <ul class="footer-unordered-list-items">
+              <li class="listed-links">
+                <a class="footer-link" href="#">Blog</a>
+              </li>
+              <li class="listed-links">
+                <a class="footer-link" href="#">Report</a>
+              </li>
+              <li class="listed-links">
+                <a class="footer-link" href="#">Ebooks and More</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-md-3 col-xs-6">
+            <h2 style="color: white; margin-left: 1.7em; font-weight: bold">
+              Getting Started
+            </h2>
+            <ul class="footer-unordered-list-items">
+              <li class="listed-links">
+                <a class="footer-link" href="signup.html">Sign up for free</a>
+              </li>
+              <li class="listed-links">
+                <a class="footer-link" href="#">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-6" style="float: right">
+            <img
+              src="Images/FooterLogo.png"
+              style="width: 20em"
+              alt="Auth_wiki_footer_logo"
+            />
+            <div class="row">
+              <div class="col-12">
+                <small style="color: white">
+                  2021 - 2022 Auth Wiki® Inc. All Rights Reserved.
+                </small>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6" style="margin-top: 4em">
+            <a class="lesser-footer" href="#" style="text-align: right"
+              >Privacy Policy</a
+            >
+            <a class="lesser-footer" href="#">Terms</a>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
