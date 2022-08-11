@@ -61,7 +61,7 @@ body {
 }
 
 .trust {
-  font-weight: 600;
+  font-weight: 600 !important;
 }
 
 .featured {
