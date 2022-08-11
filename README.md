@@ -1,6 +1,5 @@
 # AUTH WIKI
 # A repository for the collaborative work by @Auth Wiki_Team_3 on the Auth Wiki Project
-# https://github.com/orgs/zuri-training/teams/auth-wiki_team_3
 
 ## HOW TO CONTRIBUTE TO THE PROJECT
 There are two branches in the repository; one for the Frontend and Backend development each
