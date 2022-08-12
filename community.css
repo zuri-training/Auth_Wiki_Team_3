@@ -71,9 +71,9 @@ body {
 }
 
 .main-nav-list {
-    display: flex;
-    flex-direction: column;
-    gap: 7.2rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 7.2rem;
     list-style: none;
 }
 
@@ -710,21 +710,18 @@ input[type = radio] {
         border-radius: 6px;
     }
 
+    .main-nav {
+        row-gap: 4rem;
+    }
+
     .main-nav-link:link, 
     .main-nav-link:visited{
         font-size: 2rem;
     }
 
     .main-nav-list {
-        gap: 4rem;
-        justify-content: space-between;
+        row-gap: 4rem;
     }
-
-    /* .bottom-nav {
-        margin-top: 4rem;
-        position: static;
-        justify-content: space-between;
-    } */
 
     .logo {
         width: 40%;
