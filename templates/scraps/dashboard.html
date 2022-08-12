@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Dashboard | Auth Wiki</title>
+		<link rel="stylesheet" href="" />
+		<link
+			href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css"
+			rel="stylesheet"
+		/>
+	</head>
+
+	<body>
+		<h1>Dashboard</h1>
+
+		{% if request.user.is_authenticated %}
+		<h3>Welcome {{request.user}}</h3>
+		<p>Go <a href="{% url 'home' %}">Home</a></p>
+		<p>Or <a href="{% url 'signout' %}">Sign Out</a> of your dashboard</p>
+		{% else %}
+		<h3>Hello {{request.user}}</h3>
+		<p><a href="{% url 'signin' %}">Sign In</a> to access your dashboard.</p>
+		{% endif %}
+	</body>
+</html>
+
