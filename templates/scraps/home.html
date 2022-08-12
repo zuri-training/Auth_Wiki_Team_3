@@ -1,0 +1,273 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Auth Wiki | The No. 1 Wiki for All Your Authentication Codes</title>
+
+		<!-- Bootstrap CSS v5.2.0-beta1 -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+		/>
+
+		<!-- Manrope Font -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap"
+			rel="stylesheet"
+		/>
+
+		<!-- Custom Stylesheet -->
+		<link href="{% static 'library/home.css' %}" rel="stylesheet" />
+	</head>
+
+	<body>
+		<!-- Navigation Bar Mobile -->
+		<nav class="sidebar">
+			<ul>
+				<li><a href="">Documentation</a></li>
+				<li><a href="">Resources</a></li>
+				<li><a href="">Company</a></li>
+				<li><a href="">Help</a></li>
+				<li><a href="">Login</a></li>
+			</ul>
+		</nav>
+
+		<!-- Navigation Bar Desktop -->
+		<header>
+			<section class="wrapper">
+				<figure>
+					<img
+						src="{% static 'library/images/Header_Logo.png' %}"
+						alt="Auth Wiki Logo"
+					/>
+				</figure>
+
+				<section class="navWrapper">
+					<nav class="nav-links">
+						<ul>
+							<li><a href="">Documentation</a></li>
+							<li><a href="">Resources</a></li>
+							<li><a href="">Company</a></li>
+							<li><a href="">Help</a></li>
+							<li><a href="">Login</a></li>
+							<li><a href="">Try for free</a></li>
+						</ul>
+					</nav>
+
+					<section class="burgerWrapper">
+						<a class="ctaBtn2" href=""
+							><button type="button">Try for free</button></a
+						>
+
+						<section class="burger">
+							<section class="line1"></section>
+							<section class="line2"></section>
+							<section class="line3"></section>
+						</section>
+					</section>
+				</section>
+			</section>
+		</header>
+
+		<main>
+			<section class="hero">
+				<section class="outerWrapper">
+					<section class="wrapper">
+						<section class="text">
+							<h1>
+								Code Smarter
+								<span class="blue-color">Code Faster</span>
+								Code Easier
+							</h1>
+							<p>
+								This platform gives you the best developer experience, getting
+								ideas to build faster, and to download authentication codes
+								written in different languages.
+							</p>
+							<section class="heroBtnGrp">
+								<a class="ctaBtn" href=""><button>Get Started</button></a>
+								<a class="" href=""><button>View Library Codes</button></a>
+							</section>
+						</section>
+						<figure>
+							<img
+								src="{% static 'library/images/top-img.jpg' %}"
+								alt="Auth Wiki Logo"
+							/>
+						</figure>
+					</section>
+				</section>
+			</section>
+
+			<section class="searchWrapper">
+				<section class="wrapper">
+					<h4>Start your search here</h4>
+					<i class="fa-solid fa-chevron-down"></i>
+
+					<form action="" method="post" class="searchForm" id="searchForm">
+						{% csrf_token %}
+						<label for="search">
+							<i class="fa-solid fa-magnifying-glass"></i>
+							<input
+								type="search"
+								name="q"
+								id="search"
+								class="form-ctrl"
+								placeholder="Search for Authentication Codes"
+								value=""
+							/>
+							<i class="fa-solid fa-sliders"></i>
+						</label>
+					</form>
+					<section id="search-results-box" class="search-results-box hide">
+						<h1>Search results comes here</h1>
+					</section>
+				</section>
+			</section>
+
+			<section class="customers">
+				<section class="wrapper">
+					<h4>Trusted by 100+ satisfied customers all across the world</h4>
+					<section class="customerLogos">
+						<figure>
+							<img
+								src="{% static 'library/images/shopify.png' %}"
+								alt="Shopify"
+							/>
+							<figcaption>Shopify</figcaption>
+						</figure>
+
+						<figure>
+							<img src="{% static 'library/images/meta.png' %}" alt="Meta" />
+							<figcaption>Shopify</figcaption>
+						</figure>
+
+						<figure>
+							<img
+								src="{% static 'library/images/youtube.png' %}"
+								alt="Shopify"
+							/>
+							<figcaption>YouTube</figcaption>
+						</figure>
+
+						<figure>
+							<img
+								src="{% static 'library/images/mcdonalds.png' %}"
+								alt="Shopify"
+							/>
+							<figcaption>McDonalds</figcaption>
+						</figure>
+
+						<figure>
+							<img src="{% static 'library/images/netflix.png' %}" alt="" />
+							<figcaption>Netflix</figcaption>
+						</figure>
+
+						<figure>
+							<img src="{% static 'library/images/google.png' %}" alt="" />
+							<figcaption>Google</figcaption>
+						</figure>
+					</section>
+				</section>
+			</section>
+
+			<section class="together">
+				<section class="wrapper">
+					<h4>
+						Together with you, we make accessing authentication codes easier
+					</h4>
+
+					<section class="stepsWrapper">
+						<section class="step">
+							<section class="iconWrapper">
+								<figure>
+									<img src="{% static 'library/images/handsup.png' %}" alt="" />
+								</figure>
+								<section class="step-count">
+									<h4>STEP 1</h4>
+									<h2>Browse</h2>
+								</section>
+							</section>
+							<section class="description">
+								<p>
+									Register and browse about the various authentication codes
+									available. Choose the one you like.
+								</p>
+							</section>
+						</section>
+
+						<section class="step">
+							<section class="iconWrapper">
+								<figure>
+									<img src="{% static 'library/images/Vector.png' %}" alt="" />
+								</figure>
+								<section class="step-count">
+									<h4>STEP 2</h4>
+									<h2>View</h2>
+								</section>
+							</section>
+							<section class="description">
+								<p>
+									View the chosen authentication codes, as well as their
+									descriptions and samples, then download the file to your local
+									machine.
+								</p>
+							</section>
+						</section>
+
+						<section class="step">
+							<section class="iconWrapper">
+								<figure>
+									<img
+										src="{% static 'library/images/UsersThree.png' %}"
+										alt=""
+									/>
+								</figure>
+								<section class="step-count">
+									<h4>STEP 3</h4>
+									<h2>Engage</h2>
+								</section>
+							</section>
+							<section class="description">
+								<p>
+									You may also participate in community interactions by leaving
+									comments and liking your favorite documentation.
+								</p>
+							</section>
+						</section>
+					</section>
+				</section>
+			</section>
+		</main>
+
+		{% if request.user.is_authenticated %}
+		<h3>Welcome {{request.user}}</h3>
+		<p>Visit <a href="{% url 'dashboard' %}">Dashboard</a></p>
+		<p>Or <a href="{% url 'signout' %}">Sign Out</a> of your account</p>
+		{% else %}
+		<h3>Hello {{request.user}}</h3>
+		<p>Have an account? <a href="{% url 'signin' %}">Sign In</a></p>
+		<p>Don't have an account? <a href="{% url 'signup' %}">Sign Up</a></p>
+		{% endif %}
+
+		<footer></footer>
+
+		<!-- Bootstrap JavaScript Libraries -->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+
+		<!-- FontAwesome 6.1.2 JavaScript Kit Code -->
+		<script
+			src="https://kit.fontawesome.com/4c6c928034.js"
+			crossorigin="anonymous"
+		></script>
+
+		<!-- Custom Scripts -->
+		<script src="{% static 'library/home.js' %}"></script>
+	</body>
+</html>
+
