@@ -38,7 +38,7 @@ def signup(request):
     return render(request, 'library/signup.html')
 
 
-def dashboard(request):
+def unauth_dash(request):
     return render(request, 'library/unauth_dash.html')
 
 
@@ -70,7 +70,7 @@ def auth_code(request, pk):
     code = AuthCode.objects.get(id=pk)
 
     ctx = {'code': code}
-    return render(request, 'library/auth-code.html', ctx)
+    return render(request, 'library/dashboard.html', ctx)
 
 
 def notify(request):

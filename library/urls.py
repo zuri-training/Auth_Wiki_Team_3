@@ -10,8 +10,8 @@ urlpatterns = [
     path('login/', views.login, name='login'),
     path('signup/', views.signup, name='signup'),
 
-    path('dashboard/', views.dashboard, name='dashboard'),
+    path('dashboard/', views.unauth_dash, name='dashboard'),
     path('search/', views.search_results, name='search'),
-    path('auth-code/<str:pk>/', views.auth_code, name='auth-code'),
+    path('dashboard/<str:name>/', views.auth_code, name='auth-code'),
     path('notify/', views.notify, name='notify'),
 ]

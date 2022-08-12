@@ -9,7 +9,7 @@
 			name="viewport"
 			content="width=device-width, initial-scale=1, shrink-to-fit=no"
 		/>
-		g
+
 		<!-- Bootstrap CSS v5.2.0-beta1 -->
 		<link
 			rel="stylesheet"
@@ -136,9 +136,35 @@
 			</div>
 		</div>
 
-		<div class="container second-section" style="padding: 4em">
+		<section class="searchWrapper">
+			<section class="wrapper">
+				<h4>Start your search here</h4>
+				<i class="fa-solid fa-chevron-down"></i>
+
+				<form action="" method="post" class="searchForm" id="searchForm">
+					{% csrf_token %}
+					<label for="search">
+						<i class="fa-solid fa-magnifying-glass"></i>
+						<input
+							type="search"
+							name="q"
+							id="search"
+							class="form-ctrl"
+							placeholder="Search for Authentication Codes"
+							value=""
+						/>
+						<i class="fa-solid fa-sliders"></i>
+					</label>
+				</form>
+				<section
+					id="search-results-box"
+					class="search-results-box hide"
+				></section>
+			</section>
+		</section>
+
+		<!-- <div class="container second-section" style="padding: 4em">
 			<div class="row">
-				<!-- search bar goes here -->
 				<p class="text-center">Start your search here</p>
 				<i class="fa fa-chevron-down"></i>
 				<div class="mb-3 input-group">
@@ -171,7 +197,8 @@
 					</button>
 				</div>
 			</div>
-		</div>
+		</div> -->
+
 		<!-- third section -->
 		<div
 			class="container-fluid third-section"
@@ -521,5 +548,7 @@
 			integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
 			crossorigin="anonymous"
 		></script>
+
+		<script src="{% static 'library/js/index.js' %}"></script>
 	</body>
 </html>
