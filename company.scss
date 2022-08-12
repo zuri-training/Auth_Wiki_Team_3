@@ -1,0 +1,543 @@
+// footer {
+//   font: manrobe;
+//   background: #111d55;
+//   width: 100%;
+//   color: #f4f4f4;
+//   margin: 0;
+//   padding: 30px 0px;
+//   a {
+//     color: currentColor;
+//     text-decoration: underline;
+//     // text-decoration: ;
+//   }
+//   a:hover {
+//     color: currentColor;
+//   }
+//   h3 {
+//     font-family: "Manrope";
+//     font-size: 30px;
+//     font-weight: 700;
+//     line-height: 60px;
+//     letter-spacing: 0em;
+//     text-align: eft;
+//   }
+//   .firstFooter {
+//     margin-bottom: 20px;
+//     li {
+//       margin: 1.2rem 0px;
+//     }
+//   }
+//   .secondFooter {
+//     padding: 1.3rem 0px;
+//     .row {
+//       margin: 0%;
+
+//       img {
+//         width: 15rem;
+//         height: 2.5rem;
+//         margin: 15px;
+//       }
+//       .footerList {
+//         text-align: right;
+//         li {
+//           display: inline-flex;
+//           margin: 0px 10px;
+//         }
+//       }
+//     }
+//   }
+//   div.col-lg-6 {
+//     width: 50%;
+//   }
+// }
+// @media screen and (max-width: 600px) {
+//   footer {
+//     .firstFooter {
+//       h3 {
+//         font-family: "Manrope";
+//         font-size: 20px;
+//         font-weight: 700;
+//         line-height: 30px;
+//         letter-spacing: 0em;
+//         text-align: left;
+//       }
+//       li {
+//         font-family: Manrope;
+//         font-size: 14px;
+//         font-weight: 400;
+//         line-height: 24px;
+//         letter-spacing: 0em;
+//         text-align: left;
+//       }
+//     }
+//     .secondFooter {
+//       .container {
+//         padding: 0;
+//         margin: 0;
+//         img {
+//           width: 40%;
+//           height: 60%;
+//           // border: 1px solid red;
+//         }
+//         p {
+//           height: 48px;
+//           width: 125px;
+//           font-family: "Manrope";
+//           font-size: 11px;
+//           font-weight: 400;
+//           line-height: 24px;
+//         }
+//         .footerList {
+//           ul {
+//             margin-top: 25px;
+//             li {
+//               font-family: Manrope;
+//               font-size: 10px;
+//               font-weight: 800;
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
+//for company page
+section {
+  padding: 0;
+  margin: 0;
+  .aboutUs {
+    width: 100%;
+    background: linear-gradient(101.23deg, #111d55 55.61%, #111d5500 99.24%);
+    width: 100%;
+    color: #fcfcfc;
+    h1 {
+      font-size: 56px;
+      font-weight: 700;
+    }
+    p {
+      font-family: Manrope;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 30px;
+      letter-spacing: 0em;
+      text-align: left;
+      margin: 60px 0px;
+    }
+    .col-lg-7.image {
+      text-align: end;
+    }
+    img {
+      width: 70%;
+      height: 35rem;
+      border-radius: 1.5%;
+      margin: 70px 0px;
+      text-align: right;
+    }
+  }
+
+  .ourTeam {
+    .firstDiv {
+      text-align: center;
+      padding: 5rem 0px;
+      padding-bottom: 0;
+
+      .imageAndDescription {
+        img {
+          width: 8rem;
+          height: 8rem;
+          margin-bottom: 5px;
+        }
+        p {
+          color: #3b3b3b;
+          text-align: center;
+        }
+      }
+    }
+    .secondDiv {
+      background: none;
+      h1 {
+        color: #2b48d5;
+        font-family: "Manrope";
+        font-size: 50px;
+        font-weight: 700;
+        line-height: 60px;
+        letter-spacing: 0em;
+        text-align: left;
+      }
+      p {
+        color: #3b3b3b;
+        font-family: "Manrope";
+        font-size: 26px;
+        line-height: 30px;
+      }
+    }
+    @media screen and (max-width: 700px) {
+      .secondDiv {
+        h1 {
+          font-family: "Manrope";
+          font-size: 25px;
+          font-weight: 700;
+          line-height: 42px;
+        }
+
+        P {
+          font-family: "Manrope";
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 25px;
+        }
+      }
+    }
+
+    .images {
+      width: 100%;
+      .teamMembers {
+        color: #141414;
+        text-align: center;
+        margin: 30px 0px;
+        img {
+          width: 10rem;
+          height: 10rem;
+          border: 10px solid #d6ddff;
+          border-radius: 100%;
+          margin-bottom: 5px;
+        }
+        p {
+          color: #141414;
+          padding: 0;
+          margin: 0;
+        }
+      }
+    }
+    @media screen and (max-width: 700px) {
+      .images {
+        .row > * {
+          width: 50%;
+        }
+        .teamMembers {
+          color: #141414;
+          text-align: center;
+          margin: 30px 0px;
+          img {
+            width: 7rem;
+            height: 7rem;
+            border: 10px solid #d6ddff;
+            border-radius: 100%;
+            margin-bottom: 5px;
+          }
+          p {
+            color: #141414;
+            padding: 0;
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+
+  .ourCustomers {
+    text-align: center;
+    background: #f4f4f4;
+    padding: 10px 0px;
+    font-family: "Manrope";
+    h2 {
+      color: #2b48d5;
+      font-size: 50px;
+      font-weight: 700;
+      line-height: 84px;
+      padding: 1px 0px;
+      text-align: left;
+    }
+    p {
+      color: #3b3b3b;
+      font-size: 26px;
+      line-height: 30px;
+      text-align: left;
+    }
+    img {
+      margin: 50px 10px;
+      width: 6rem;
+      height: 6rem;
+    }
+  }
+}
+
+// for very small devices
+@media screen and (max-width: 997px) {
+  section {
+    .aboutUs {
+      p {
+        margin: 20px 0px;
+      }
+    }
+    .aboutUs {
+      .col-lg-7.image {
+        text-align: center;
+      }
+      img {
+        width: 100%;
+        height: 33rem;
+        margin: 5px 0px;
+        margin-bottom: 40px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 600px) {
+  section {
+    .ourTeam {
+      .secondDiv {
+        h1 {
+          font-size: 40px;
+          font-weight: 700;
+          line-height: 50px;
+        }
+        p {
+          font-size: 23px;
+        }
+      }
+
+      .images {
+        img {
+          width: 3rem;
+          height: 3rem;
+          border: 10px solid #d6ddff;
+          border-radius: 100%;
+          margin-bottom: 5px;
+        }
+      }
+    }
+
+    .ourCustomers {
+      h2 {
+        font-family: "Manrope";
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 42px;
+        letter-spacing: 0em;
+        text-align: left;
+      }
+      p {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0em;
+        text-align: left;
+      }
+    }
+  }
+}
+
+// for example page
+section {
+  padding: 0;
+  margin: 0;
+  .example {
+    .firstDiv {
+      .icons {
+        img {
+          width: 1.5rem;
+          height: 1.5rem;
+        }
+        input {
+          width: 30px;
+          height: 25px;
+          margin-left: 5px;
+          border: none;
+        }
+      }
+
+      .LanguageDropDown {
+        select {
+          border: 1px solid red;
+        }
+      }
+      ul {
+        border: 1px solid red;
+      }
+    }
+
+    .secondDiv {
+      padding: 20px 0px;
+      background: #f1f1f1;
+    }
+    .thirdDiv {
+      padding: 15px 0px 50px 0px;
+    }
+    .fourthDiv {
+      background: #f1f1f1;
+      padding: 15px 0px 50px 0px;
+      .container {
+        margin-top: 50px;
+        .codes {
+          background: #141414;
+          color: #fcfcfc;
+          padding: 7% 20%;
+        }
+      }
+    }
+    .fifthDiv {
+      .something {
+        margin-bottom: 40px;
+        border-top: 2px solid #242341;
+        width: 100%;
+        .row {
+          padding-top: 3rem;
+        }
+        h3 {
+          margin-bottom: 0;
+        }
+        padding: 0rem 5rem;
+        img {
+          border-radius: 100%;
+          width: 5rem;
+          height: 3rem;
+          display: flex;
+        }
+        p {
+          font-family: "Manrope";
+          font-size: 23px;
+          font-weight: 200;
+          padding: 0px 6rem;
+          height: 100%;
+          width: 100%;
+        }
+      }
+
+      @media screen and (max-width: 700px) {
+        p {
+          font-family: "Manrope";
+          font-size: 5px;
+          font-weight: 100;
+          padding: 0px 6rem;
+          height: 100%;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+//for documentation page
+section.documentation {
+  a {
+    color: currentColor;
+  }
+  h1 h2 h3 {
+    margin: 0;
+    padding: 0;
+  }
+
+  @media screen and (max-width: 500px) {
+    .col {
+      flex: none;
+    }
+  }
+  .something {
+    line-height: 2rem;
+    p {
+      height: 10rem;
+      justify-content: center;
+    }
+    .lastBtn {
+      border: none;
+      text-align: center;
+      width: 100%;
+      height: 2.5rem;
+      background-attachment: #fcfcfc;
+    }
+  }
+
+  .firstDiv {
+    padding: 20px 0px;
+    h5 {
+      font-size: 38px;
+      font-weight: 700;
+      line-height: 52px;
+    }
+    p {
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 38px;
+      color: #141414;
+    }
+    img {
+      height: 26rem;
+      margin-top: 45px 0px;
+    }
+    button {
+      background-color: #3456ff;
+      width: 100%;
+      font-size: 15px;
+      font-weight: 500;
+      height: 3rem;
+      margin: 30px 0px;
+    }
+    .searchBox {
+      margin: 3rem 0px;
+      width: 100%;
+      text-align: center;
+      .inputArea {
+        border: 1px solid black;
+        border-radius: 5px;
+        padding: 0px 10px;
+        img {
+          width: 2rem;
+          height: 1.5rem;
+          padding: 0px 5px;
+          margin-top: 10px;
+          font-size: 100px;
+        }
+        input {
+          width: 100%;
+          padding: 0px 20px;
+          margin: 0;
+          padding: 0;
+          border: none;
+        }
+        input:focus {
+          border: none;
+        }
+      }
+    }
+  }
+
+  .secondDiv {
+    background: #f1f1f1;
+    padding: 1rem 0rem;
+    h2 {
+      font-size: 40px;
+      font-weight: 500;
+      padding: 1rem 0rem;
+      line-height: 53px;
+    }
+    .card {
+      padding: 1rem 1rem;
+      justify-content: center;
+
+      .card-image {
+        img {
+          // width: 2rem;
+          height: 15rem;
+        }
+      }
+      .card-content {
+        .d-flex {
+          img {
+            width: 2rem;
+            height: 2rem;
+            margin-right: 3px;
+          }
+          input {
+            margin: 0;
+            padding: 0;
+            border: none;
+            width: 2rem;
+            height: 1.7rem;
+            font-size: 1.7rem;
+          }
+        }
+      }
+    }
+  }
+}
