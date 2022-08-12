@@ -5,9 +5,8 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Sign Up | Auth Wiki</title>
+		<title>Sign Up</title>
 		<link rel="stylesheet" href="{% static 'user_auth/signup.css' %}" />
-
 		<link
 			href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css"
 			rel="stylesheet"
@@ -17,7 +16,12 @@
 	<body>
 		<div class="container">
 			<div class="signup_left">
-				<img src="{% static 'user_auth/login_logo_white.png' %}" alt="" />
+				<a href="{% url 'index' %}"
+					><img
+						src="https://i.ibb.co/9htWbZV/login-logo-white.png"
+						alt="login-logo-white"
+						border="0"
+				/></a>
 				<div class="signup_intro">
 					<div>
 						<h2>Welcome to our community</h2>
@@ -27,7 +31,14 @@
 			</div>
 			<div class="signup_right">
 				<div class="signup_card">
+					<img
+						class="logo"
+						src="https://i.ibb.co/bs3XVyB/Group-367-removebg-preview.png"
+						alt="Group-367-removebg-preview"
+						border="0"
+					/>
 					<h2>Let's get started</h2>
+					<p>Sign Up to get all your authentication codes</p>
 
 					{% for field in signup_form %} {% for error in field.errors %}
 					<p class="error">{{error}}</p>
@@ -35,7 +46,6 @@
 					<p class="error">{{signup_form.non_field_errors}}</p>
 					{% endif %}
 
-					<p>Sign Up to get all your authentication codes</p>
 					<form action="" method="post">
 						{% csrf_token %}
 
@@ -95,16 +105,19 @@
 							<p>or</p>
 							<hr />
 						</div>
-						<button type="button">
-							<img src="{% static 'user_auth/icons8-linkedin.svg' %}" alt="" />
+
+						<button type="submit">
+							<img src="https://img.icons8.com/color/48/000000/linkedin.png" />
 							Continue with LinkedIn</button
 						><br />
-						<button type="button">
-							<img src="{% static 'user_auth/icons8-github.svg' %}" alt="" />
-							Continue with Github
+						<button type="submit">
+							<img
+								src="https://img.icons8.com/ios-filled/50/000000/github.png"
+							/>Continue with Github
 						</button>
+
 						<p class="already">
-							Already have an account? <a href="{% url 'signin' %}">Sign In</a>
+							Already have an account? <a href="{% url 'login' %}">Log In</a>
 						</p>
 					</form>
 				</div>
@@ -112,4 +125,3 @@
 		</div>
 	</body>
 </html>
-

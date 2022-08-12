@@ -1,9 +1,12 @@
 from django.contrib import admin
 from django.contrib.auth.admin import UserAdmin as BaseUserAdmin
 from .models import OurUser
+# from library.models import AuthCode
+
 
 class OurUserAdmin(BaseUserAdmin):
-  list_display = ('username', 'email', 'tos', 'date_joined', 'is_active', 'is_admin',)
+  list_display = ('username', 'email', 'tos',
+                  'date_joined', 'is_active', 'is_admin',)
 
   search_fields = ('username', 'email', 'date_joined',)
 
@@ -16,13 +19,14 @@ class OurUserAdmin(BaseUserAdmin):
   fieldsets = ()
 
   add_fieldsets = (
-    (None, {
-      'classes': ('wide'),
-      'fields': ('username', 'email', 'tos', 'password1', 'password2'),
-    }),
+      (None, {
+          'classes': ('wide'),
+          'fields': ('username', 'email', 'tos', 'password1', 'password2'),
+      }),
   )
 
   ordering = ('username',)
+
 
 # Register your models here.
 admin.site.register(OurUser, OurUserAdmin)
