@@ -98,7 +98,12 @@ body {
     color: #111D55;
 }
 
-
+.main-nav-link.help-link {
+    background-color: #fcfcfc;
+    color: #040404;
+    border-radius: 4px;
+    transition: none;
+}
 
 /**************************************/
 /*~ MAIN BODY */
