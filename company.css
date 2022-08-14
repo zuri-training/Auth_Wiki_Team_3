@@ -1,4 +1,4 @@
-footer {
+/* footer {
   font: manrobe;
   background: #111D55;
   width: 100%;
@@ -89,17 +89,21 @@ footer div.col-lg-6 {
     font-family: Manrope;
     font-size: 10px;
     font-weight: 800;
-  }
-}
+  } */
+/* } */
 section {
   padding: 0;
   margin: 0;
 }
 section .aboutUs {
   width: 100%;
-  background: linear-gradient(101.23deg, #111D55 55.61%, rgba(17, 29, 85, 0) 99.24%);
+  background: linear-gradient(
+    101.23deg,
+    #111d55 55.61%,
+    rgba(17, 29, 85, 0) 99.24%
+  );
   width: 100%;
-  color: #FCFCFC;
+  color: #fcfcfc;
 }
 section .aboutUs h1 {
   font-size: 56px;
@@ -135,14 +139,14 @@ section .ourTeam .firstDiv .imageAndDescription img {
   margin-bottom: 5px;
 }
 section .ourTeam .firstDiv .imageAndDescription p {
-  color: #3B3B3B;
+  color: #3b3b3b;
   text-align: center;
 }
 section .ourTeam .secondDiv {
   background: none;
 }
 section .ourTeam .secondDiv h1 {
-  color: #2B48D5;
+  color: #2b48d5;
   font-family: "Manrope";
   font-size: 50px;
   font-weight: 700;
@@ -151,7 +155,7 @@ section .ourTeam .secondDiv h1 {
   text-align: left;
 }
 section .ourTeam .secondDiv p {
-  color: #3B3B3B;
+  color: #3b3b3b;
   font-family: "Manrope";
   font-size: 26px;
   line-height: 30px;
@@ -181,7 +185,7 @@ section .ourTeam .images .teamMembers {
 section .ourTeam .images .teamMembers img {
   width: 10rem;
   height: 10rem;
-  border: 10px solid #D6DDFF;
+  border: 10px solid #d6ddff;
   border-radius: 100%;
   margin-bottom: 5px;
 }
@@ -202,7 +206,7 @@ section .ourTeam .images .teamMembers p {
   section .ourTeam .images .teamMembers img {
     width: 7rem;
     height: 7rem;
-    border: 10px solid #D6DDFF;
+    border: 10px solid #d6ddff;
     border-radius: 100%;
     margin-bottom: 5px;
   }
@@ -214,12 +218,12 @@ section .ourTeam .images .teamMembers p {
 }
 section .ourCustomers {
   text-align: center;
-  background: #F4F4F4;
+  background: #f4f4f4;
   padding: 10px 0px;
   font-family: "Manrope";
 }
 section .ourCustomers h2 {
-  color: #2B48D5;
+  color: #2b48d5;
   font-size: 50px;
   font-weight: 700;
   line-height: 84px;
@@ -227,7 +231,7 @@ section .ourCustomers h2 {
   text-align: left;
 }
 section .ourCustomers p {
-  color: #3B3B3B;
+  color: #3b3b3b;
   font-size: 26px;
   line-height: 30px;
   text-align: left;
@@ -264,7 +268,7 @@ section .ourCustomers img {
   section .ourTeam .images img {
     width: 3rem;
     height: 3rem;
-    border: 10px solid #D6DDFF;
+    border: 10px solid #d6ddff;
     border-radius: 100%;
     margin-bottom: 5px;
   }
@@ -306,13 +310,13 @@ section .example .firstDiv ul {
 }
 section .example .secondDiv {
   padding: 20px 0px;
-  background: #F1F1F1;
+  background: #f1f1f1;
 }
 section .example .thirdDiv {
   padding: 15px 0px 50px 0px;
 }
 section .example .fourthDiv {
-  background: #F1F1F1;
+  background: #f1f1f1;
   padding: 15px 0px 50px 0px;
 }
 section .example .fourthDiv .container {
@@ -320,7 +324,7 @@ section .example .fourthDiv .container {
 }
 section .example .fourthDiv .container .codes {
   background: #141414;
-  color: #FCFCFC;
+  color: #fcfcfc;
   padding: 7% 20%;
 }
 section .example .fifthDiv .something {
@@ -384,7 +388,7 @@ section.documentation .something .lastBtn {
   text-align: center;
   width: 100%;
   height: 2.5rem;
-  background-attachment: #FCFCFC;
+  background-attachment: #fcfcfc;
 }
 section.documentation .firstDiv {
   padding: 20px 0px;
@@ -405,7 +409,7 @@ section.documentation .firstDiv img {
   margin-top: 45px 0px;
 }
 section.documentation .firstDiv button {
-  background-color: #3456FF;
+  background-color: #3456ff;
   width: 100%;
   font-size: 15px;
   font-weight: 500;
@@ -440,7 +444,7 @@ section.documentation .firstDiv .searchBox .inputArea input:focus {
   border: none;
 }
 section.documentation .secondDiv {
-  background: #F1F1F1;
+  background: #f1f1f1;
   padding: 1rem 0rem;
 }
 section.documentation .secondDiv h2 {
@@ -468,4 +472,4 @@ section.documentation .secondDiv .card .card-content .d-flex input {
   width: 2rem;
   height: 1.7rem;
   font-size: 1.7rem;
-}/*# sourceMappingURL=company.css.map */
+} /*# sourceMappingURL=company.css.map */
