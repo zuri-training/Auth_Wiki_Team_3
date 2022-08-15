@@ -1,0 +1,345 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{% static 'user_auth/settings.css' %}" />
+    <!-- <link rel="stylesheet" href="/assets/framework/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/framework/materialize.min.css"> -->
+    <link rel="stylesheet" href="/comapny.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    />
+    <title>Auth Wiki | Settings</title>
+  </head>
+  <body>
+    <div class="nav">
+      <div class="nav__top">
+
+        <a href="index.html"
+          ><img
+            src="./assets/images/settings__page/logo.png"
+            alt="Auth Wiki Logo"
+        /></a>
+
+        <hr />
+        <div class="nav__links">
+          <div class="nav__link">
+            <img src="./assets/images/settings__page/books.svg" alt="" />
+            <!-- <i class="fa fa-pause" aria-hidden="true"></i> -->
+            <a href=""><h3>Browse Library</h3></a>
+          </div>
+          <div class="nav__link">
+            <img src="./assets/images/settings__page/users.svg" alt="" />
+
+            <a href=""><h3>Community</h3></a>
+          </div>
+          <div class="nav__link">
+            <div class="container">
+              <img src="./assets/images/settings__page/settings.svg" alt="" />
+	      <a href="{% url 'profile' %}"><h3>Settings</h3></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="nav__bottom">
+        <div class="nav__link">
+          <img src="./assets/images/settings__page/Question.svg" alt="" />
+          <a href=""><h3>Help</h3></a>
+        </div>
+        <div class="nav__link">
+          <img src="./assets/images/settings__page/SignOut.svg" alt="" />
+          <a href=""><h3>Logout</h3></a>
+        </div>
+      </div>
+    </div>
+    <!-- /////////////////////// Content Section////////////////////////////////////////// -->
+    <div class="content">
+      <main class="main">
+        <div class="nav__mobile">
+          <img
+            class="nav__mobile__icon"
+            src="./assets/images/settings__page/List.svg"
+            alt="nav_mobile"
+          />
+          <img
+            class="nav__mobile__logo"
+            src="./assets/images/settings__page/Logo(4).png"
+            alt="logo"
+          />
+          <img
+            class="nav__mobile__icon"
+            src="./assets/images/settings__page/bell.svg"
+            alt="bell"
+          />
+        </div>
+        <section class="content__one">
+          <div><h2>Account Settings</h2></div>
+          <div class="user">
+            <img src="./assets/images/settings__page/bell.svg" alt="" />
+            <div class="user__container">
+              <div class="user__img">
+                <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="">
+              </div>
+              <h4>Jane Doe</h4>
+            </div>
+          </div>
+        </section>
+        <section class="user__details">
+          <div class="user__info">
+            <div class="user__info__left">
+              <div class="profile_photo_mobile">
+                <h3>Profile Photo</h3>
+                <div class="img__container">
+                  <div class="img">
+                    <img
+                      src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+                      alt="image"
+                    />
+                  </div>
+                  <div class="inner__circle">
+                    <div class="outer__circle">
+                      <i class="fa fa-plus fa-2x" aria-hidden="true"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <h3>User Information</h3>
+              <p>
+                Here you can edit information about yourself.This changes would
+                be displayed for otherusers in 5 minutes
+              </p>
+	      {% if messages%}
+	      {% for message in messages %}
+	      <p{% if message.tags %} class="{{message.tags}}"{% endif %}>{{ message }} </p>
+	      {% for field in user_form %}
+	      {% for error in field.errors %}
+	      <p class="error"> {{error}} </p>
+	      {% endfor %}{% endfor%}
+
+
+              <form action="" method="post">
+                <div class="form__input">
+                  <label for="username">Username</label>
+		  {{ user_form.username }}
+                </div>
+                <div class="form__input">
+                  <label for="email">Email Address</label>
+		  {{ user_form.email }}
+                </div>
+                <div class="form__input">
+                  <label for="password">Password</label>
+                  <input id="password" type="password" />
+                </div>
+                <div class="form__input">
+                  <label for="password">Confirm Password</label>
+                  <input id="password" type="password" />
+                </div>
+              </form>
+            </div>
+
+            <div class="user__info__right">
+              <div class="profile_photo_desktop">
+                <h3>Profile Photo</h3>
+                <div class="img__container">
+                  <div class="img">
+                    <img
+                      src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+                      alt="image"
+                    />
+                  </div>
+                  <div class="inner__circle">
+                    <div class="outer__circle">
+                      <i class="fa fa-plus fa-2x" aria-hidden="true"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <h3 class="linked__accounts__header">Linked Accounts</h3>
+              <div class="linked__accounts">
+                <div class="linked__accounts__socials">
+                  <img
+                    src="./assets/images/settings__page/linkedin.svg"
+                    alt=""
+                  />
+                  <h4>Linkedin</h4>
+                </div>
+                <button class="social__button">Connect</button>
+              </div>
+              <div class="linked__accounts">
+                <div class="linked__accounts__socials">
+                  <img src="./assets/images/settings__page/github.svg" alt="" />
+                  <h4>Github</h4>
+                </div>
+                <button class="social__button">Connected</button>
+              </div>
+            </div>
+          </div>
+	  <a href="{% url 'dashboard' %}"><button type="submit" class="btn">Save</button></a>
+        </section>
+        <section class="download__history">
+          <h2>Download History</h2>
+          <div class="search__history">
+            <select class="search__history__select" name="" id="">
+              <option value="">Languages</option>
+              <!-- <option value="">Languages2</option> -->
+            </select>
+            <div class="history__input__container">
+              <img
+                class=""
+                src="./assets/images/settings__page/search__icon.svg"
+                alt="search icon"
+              />
+
+              <input
+                class="search__history__input"
+                type="text"
+                placeholder="What are you looking for?"
+              />
+            </div>
+            <img
+              class="filters"
+              src="./assets/images/settings__page/filters.svg"
+              alt=""
+            />
+          </div>
+          <div class="search_history_mobile">
+            <select class="search__history__select" name="" id="">
+              <option value="">Languages</option>
+              <!-- <option value="">Languages2</option> -->
+            </select>
+            <div class="input_mobile">
+              <div class="history__input__container">
+                <img
+                  class=""
+                  src="./assets/images/settings__page/search__icon.svg"
+                  alt="search icon"
+                />
+
+                <input
+                  class="search__history__input"
+                  type="text"
+                  placeholder="What are you looking for?"
+                />
+              </div>
+              <img
+                class="filters"
+                src="./assets/images/settings__page/filters.svg"
+                alt=""
+              />
+            </div>
+          </div>
+
+          <div class="auth__codes__history">
+            <div class="auth__code">
+              <h2>Two Factor Authentication code</h2>
+              <div class="auth__code__lang">
+                <div class="auth__lang">Python</div>
+                <div class="auth__date">
+                  <img src="./assets/images/settings__page/Timer.svg" alt="" />
+                  22/07/2022
+                </div>
+              </div>
+            </div>
+            <button class="auth__code__btn">View</button>
+          </div>
+          <hr />
+          <div class="auth__codes__history">
+            <div class="auth__code">
+              <h2>Two Factor Authentication code</h2>
+              <div class="auth__code__lang">
+                <div class="auth__lang">ReactJS</div>
+                <div class="auth__date">
+                  <img src="./assets/images/settings__page/Timer.svg" alt="" />
+                  22/07/2022
+                </div>
+              </div>
+            </div>
+            <button class="auth__code__btn">View</button>
+          </div>
+        </section>
+        <section class="terms">
+          <h2>Terms and Conditions</h2>
+          <p>
+            It is your responsibility to ensure your computer system meets all
+            the necessary technical specifications to enable you to access and
+            use the Site and is compatible with the Site. We may, from time to
+            time, restrict access to certain features, parts or content of the
+            Site to users who have registered with us (such as access to the
+            Services support program features and pages). You must ensure that
+            any registration details you provide are accurate. If you use or
+            create a log-in ID (such as a username and password or other
+            identifier) as part of our security procedures, you must treat such
+            information as confidential and must not reveal it to anyone else.
+          </p>
+          <p>
+            You are responsible for all activities that occur under your log-in
+            ID and must notify us immediately of any unauthorized use or other
+            security breach of which you become aware. We reserve the right to
+            disable any log-in ID, at any time, if in our opinion you have
+            failed to comply with any of the provisions of these terms of use or
+            if any details you provide for the purposes of registering as a user
+            prove to be false. We cannot guarantee the continuous, uninterrupted
+            or error-free operability of the Site. There may be times when
+            certain features, parts or content of the Site, or the entire Site,
+            become unavailable (whether on a scheduled or unscheduled basis) or
+            are modified, suspended or withdrawn by us, in our sole discretion,
+            without notice to you. You agree that we will not be liable to you
+            or to any third party for any unavailability, modification,
+            suspension or withdrawal of the Site, or any features, parts or
+            content of the Site.
+          </p>
+        </section>
+
+        <section class="policy">
+          <h2>Privacy Policy</h2>
+          <p>
+            Privacy is important to Auth_Wiki and we take care to process
+            personal data in accordance with applicable data protection laws and
+            our contractual obligations. Please take the time to read both this
+            Privacy Policy to understand how Auth_Wiki secures personal data,
+            and why and how Auth_Wiki processes, shares and secures personal
+            data, and to learn more about your rights and preferences.
+          </p>
+          <p>
+            If you have any questions about this Policy, please contact us at
+            <a href="">privacy@Auth_Wiki.com.</a>
+          </p>
+        </section>
+      </main>
+      <footer>
+        <div class="secondFooter">
+          <div class="container">
+            <div class="row">
+              <div>
+                <img src="/assets/images/Footer Logo.png" alt="" />
+              </div>
+
+                  <div class="row">
+                      <div class="col-lg-6 wiki_inc">
+                          <p>2021 - 2022 Auth Wiki Inc. All Rights Reserved</p>
+                      </div>
+
+                <div class="col-lg-6 footerList">
+                  <ul>
+                    <li>
+                      <a href="#">Privacy Policy</a>
+                    </li>
+
+
+                    <li>
+                      <a href="#">Terms</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
