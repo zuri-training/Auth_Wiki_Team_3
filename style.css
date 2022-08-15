@@ -54,7 +54,7 @@ body {
 }
 
 .top-section {
-  background-image: url("../Images/Frame208.png");
+  background-image: url("./Images/Frame208.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: bottom;
