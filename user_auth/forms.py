@@ -1,5 +1,5 @@
 from django import forms
-from django.contrib.auth.forms import UserCreationForm
+from django.contrib.auth.forms import UserCreationForm, 
 from django.contrib.auth import authenticate
 from user_auth.models import OurUser
 
@@ -48,3 +48,10 @@ class UserLoginForm(forms.ModelForm):
 
             if not authenticate(email=email, password=password):
                 raise forms.ValidationError('Invalid Email or Password')
+
+class UpdateUserForm(forms.ModelForm):
+    username = forms.CharField(max_length=100, required=True)
+    email = forms.EmailField(required=True)
+    class Meta:
+        model = OurUser
+        fields = ('username', 'email')
