@@ -4,7 +4,7 @@ from django.contrib.auth import authenticate, login, logout
 from django.contrib import messages
 from .models import OurUser
 from .forms import UserSignupForm, UserLoginForm
-from django.auth.decorators import login_required
+
 # Create your views here.
 
 
@@ -65,19 +65,6 @@ def signoutView(request):
     logout(request)
     return redirect('signin')
 
-@login_required
-def profileView(request):
-    user = request.user
-    if request.method == 'POST':
-        user_form = UpdateUserForm(request.POST, instance=request.user)
-
-        if user_form.is_valid():
-            user_form.save()
-            messages.success(request, 'Your profile has been updated successfully')
-            return redirect('dashboard')
-    else:
-        user_form = UpdateUserForm(instance=user)
-    return render(request, 'user_auth/profile.html', {'user_form': user_form})
 
 def forgotPasswordView(request):
     return render(request, 'user_auth/forgot-password.html')
